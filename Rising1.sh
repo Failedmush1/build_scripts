@@ -12,8 +12,5 @@ git clone https://github.com/Failedmush1/hardware_xiaomi -b fifteen hardware/xia
 . build/envsetup.sh; \
 riseup renoir user && \
 rise b; \
-rm -rf out/target/product/vanilla && rm -rf out/target/product/gapps; \
-cd out/target/product && mv renoir vanilla && cd ../../..; \
-cd device/xiaomi/renoir && rm lineage_renoir.mk && mv gapps.txt lineage_renoir.mk && cd ../../..; \
 . build/envsetup.sh; \
 riseup renoir user && rise b; \"
