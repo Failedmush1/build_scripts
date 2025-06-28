@@ -12,3 +12,5 @@ git clone https://github.com/Failedmush1/hardware_xiaomi -b fifteen hardware/xia
 breakfast renoir user &&
 # Build
 mka bacon
+rm -rf out/target/product/vanilla && \
+cd out/target/product && mv renoir vanilla && cd ../../..; \
