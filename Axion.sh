@@ -9,5 +9,3 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b main ke
 git clone https://github.com/Failedmush1/hardware_xiaomi -b fifteen hardware/xiaomi && \
 . build/envsetup.sh && \
 gk -s && axion renoir va user && make installclean && ax -br
-rm -rf out/target/product/vanilla && \
-cd out/target/product && mv renoir vanilla && cd ../../..; \
