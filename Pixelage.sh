@@ -15,6 +15,5 @@ export BUILD_HOSTNAME=crave; \
 export PIXELAGE_BUILD="renoir"
 export TZ=Asia/Tokyo; \
 source build/envsetup.sh && \
-lunch pixelage_renoir-bp1a-buildtype && \
-make installclean; \
-mka bacon
+make installclean; && \
+mka bacon \
