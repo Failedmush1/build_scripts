@@ -6,7 +6,7 @@ repo init --depth=1 --no-repo-verify -u https://github.com/ProjectPixelage/andro
 /opt/crave/resync.sh && \
 git clone https://github.com/Failedmush/android_device_xiaomi_renoirv2 -b 15 device/xiaomi/renoir && \
 git clone https://github.com/RobertGarciaa/device_xiaomi_sm8350-common -b 15 device/xiaomi/sm8350-common && \
-git clone https://github.com/Failedmush/vendor_xiaomi_renoir -b lineage-22.2 vendor/xiaomi/renoir && \
+git clone https://github.com/Failedmush/vendor_xiaomi_renoir -b 15 vendor/xiaomi/renoir && \
 git clone https://github.com/RobertGarciaa/vendor_xiaomi_sm8350-common -b 15 vendor/xiaomi/sm8350-common && \
 git clone https://github.com/RobertGarciaa/android_kernel_xiaomi_sm8350 -b 15 kernel/xiaomi/sm8350 && \
 git clone https://github.com/RobertGarciaa/hardware_xiaomi -b 15 hardware/xiaomi && \
