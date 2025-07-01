@@ -17,7 +17,5 @@ export TZ=Asia/Tokyo; \
 source build/envsetup.sh && \
 # brunch configuration
 lunch pixelage_renoir-bp1a-userdebug && \
-# Clean
-make installclean
 # Run
 mka bacon
