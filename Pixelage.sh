@@ -10,3 +10,10 @@ git clone https://github.com/Failedmush/vendor_xiaomi_renoir -b lineage-22.2 ven
 git clone https://github.com/RobertGarciaa/vendor_xiaomi_sm8350-common -b 15 vendor/xiaomi/sm8350-common && \
 git clone https://github.com/RobertGarciaa/android_kernel_xiaomi_sm8350 -b 15 kernel/xiaomi/sm8350 && \
 git clone https://github.com/RobertGarciaa/hardware_xiaomi -b 15 hardware/xiaomi && \
+export BUILD_USERNAME=Failedmush; \
+export BUILD_HOSTNAME=crave; \
+export TZ=Asia/Tokyo; \
+source build/envsetup.sh && \
+lunch aosp_renoir-bp1a-user && \
+make installclean; \
+mka bacon
