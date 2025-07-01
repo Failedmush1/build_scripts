@@ -2,7 +2,7 @@
 
 rm -rf .repo/local_manifests; \
 rm -rf {device,vendor,kernel,hardware}/xiaomi; \
-repo init --depth=1 --no-repo-verify -u https://github.com/PixelOS-AOSP/manifest.git -b fifteen --git-lfs -g default,-mips,-darwin,-notdefault && \
+repo init --depth=1 --no-repo-verify -u https://github.com/ProjectPixelage/android_manifest -b 15 --git-lfs -g default,-mips,-darwin,-notdefault && \
 /opt/crave/resync.sh && \
 git clone https://github.com/Failedmush/android_device_xiaomi_renoirv2 -b 15 device/xiaomi/renoir && \
 git clone https://github.com/RobertGarciaa/device_xiaomi_sm8350-common -b 15 device/xiaomi/sm8350-common && \
