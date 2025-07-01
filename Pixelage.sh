@@ -12,6 +12,7 @@ git clone https://github.com/RobertGarciaa/android_kernel_xiaomi_sm8350 -b 15 ke
 git clone https://github.com/RobertGarciaa/hardware_xiaomi -b 15 hardware/xiaomi && \
 export BUILD_USERNAME=Failedmush; \
 export BUILD_HOSTNAME=crave; \
+export PIXELAGE_BUILD="renoir"
 export TZ=Asia/Tokyo; \
 source build/envsetup.sh && \
 lunch pixelage_renoir-bp1a-buildtype && \
