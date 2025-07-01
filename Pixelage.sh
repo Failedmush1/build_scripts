@@ -14,6 +14,6 @@ export BUILD_USERNAME=Failedmush; \
 export BUILD_HOSTNAME=crave; \
 export TZ=Asia/Tokyo; \
 source build/envsetup.sh && \
-lunch aosp_renoir-bp1a-user && \
+lunch pixelage_renoir-bp1a-buildtype && \
 make installclean; \
 mka bacon
