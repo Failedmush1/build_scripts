@@ -12,5 +12,4 @@ git clone https://github.com/RobertGarciaa/android_kernel_xiaomi_sm8350 -b 15 ke
 git clone https://github.com/RobertGarciaa/hardware_xiaomi -b 15 hardware/xiaomi && \
 . build/envsetup.sh && \
 # brunch configuration
-axion <renoir>
 axion renoir va
