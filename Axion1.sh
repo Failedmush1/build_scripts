@@ -14,6 +14,3 @@ git clone https://github.com/RobertGarciaa/hardware_xiaomi -b 15 hardware/xiaomi
 # brunch configuration
 axion <renoir>
 axion renoir va
-# Run
-mka bacon
-
