@@ -11,5 +11,9 @@ git clone https://github.com/RobertGarciaa/vendor_xiaomi_sm8350-common -b 15 ven
 git clone https://github.com/RobertGarciaa/android_kernel_xiaomi_sm8350 -b 15 kernel/xiaomi/sm8350 && \
 git clone https://github.com/RobertGarciaa/hardware_xiaomi -b 15 hardware/xiaomi && \
 . build/envsetup.sh && \
+# brunch configuration
+axion <renoir>
+axion renoir va
+# Run
+mka bacon
 
-axion <device_codename>
