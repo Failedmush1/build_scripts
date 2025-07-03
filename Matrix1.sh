@@ -11,6 +11,6 @@ export BUILD_HOSTNAME=crave; \
 export TZ=Asia/Tokyo; \
 # Vanilla Build
 . build/envsetup.sh && \
-breakfast renoir user && mka bacon; \
+breakfast renoir user && make installclean && mka bacon; 
 rm -rf out/target/product/vanilla; \
 cd out/target/product && mv renoir vanilla && cd ../../..; \
