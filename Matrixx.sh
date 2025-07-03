@@ -11,11 +11,6 @@ export BUILD_HOSTNAME=crave; \
 export TZ=Asia/Tokyo; \
 # Vanilla Build
 . build/envsetup.sh && \
-breakfast renoir user && mka bacon; \
-rm -rf out/target/product/vanilla && rm -rf out/target/product/gapps; \
+brunch renoir user && mka bacon; \
+rm -rf out/target/product/vanilla && \
 cd out/target/product && mv renoir vanilla && cd ../../..; \
-# Gapps Build
-cd device/xiaomi/renoir && rm lineage_renoir.mk && mv gapps.txt lineage_renoir.mk && cd ../../..; \
-. build/envsetup.sh; \
-breakfast renoir user && mka bacon; \
-cd out/target/product && mv renoir gapps && cd ../../..; \
