@@ -10,6 +10,16 @@ git clone https://gitlab.com/senoved/android_vendor_xiaomi_renoir -b lineage-22.
 git clone https://gitlab.com/senoved/android_vendor_xiaomi_sm8350-common -b lineage-22.2 vendor/xiaomi/sm8350-common && \
 git clone https://github.com/Failedmush/kernel_xiaomi_sm8350 -b 15.2 kernel/xiaomi/sm8350 && \
 git clone https://github.com/Failedmush/hardware_xiaomi -b 15.2 hardware/xiaomi && \
+export BUILD_USERNAME=Failedmush; \
+export BUILD_HOSTNAME=crave; \
+export TZ=Asia/Tokyo; \
 . build/envsetup.sh && \
-# brunch configuration
-axion renoir va
+# Vanilla Build
+. build/envsetup.sh && \
+axion renoir va user && make installclean && ax -b; \
+rm -rf out/target/product/vanilla && rm -rf out/target/product/gapps; \
+cd out/target/product && mv renoir vanilla && cd ../../..; \
+# Gapps Build
+. build/envsetup.sh; \
+axion renoir gms pico user && make installclean && ax -b; \
+cd out/target/product && mv renoir gapps && cd ../../..; \
