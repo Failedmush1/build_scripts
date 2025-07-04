@@ -2,6 +2,7 @@
 
 rm -rf .repo/local_manifests; \
 rm -rf {device,vendor,kernel,hardware}/xiaomi; \
+
 # ==== Fix for Trusty Soong Error (dummy module define) ====
 
 mkdir -p trusty/vendor/google/aosp/scripts/dummy
