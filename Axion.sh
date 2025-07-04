@@ -1,25 +1,8 @@
 rm -rf .repo/local_manifests && \
 rm -rf {device,vendor,kernel,hardware}/xiaomi && \
-
-# ==== Fix for Trusty Soong Error (dummy module define) ====
-
-mkdir -p trusty/vendor/google/aosp/scripts/dummy
-
-cat > trusty/vendor/google/aosp/scripts/Android.bp << 'EOF'
-bootstrap_go_package {
-    name: "trusty_dirgroup_prebuilts_clang_host_linux-x86",
-    pkgPath: "trusty/vendor/google/aosp/scripts/dummy",
-    deps: [],
-    srcs: ["dummy.go"],
-}
-EOF
-
-echo "package dummy" > trusty/vendor/google/aosp/scripts/dummy/dummy.go
-
-# ==== End of Trusty Fix ====
-
 rm -rf packages/apps/ViPER4AndroidFX && \
 repo init --depth=1 --no-repo-verify -u https://github.com/AxionAOSP/android -b lineage-22.2 -git-lfs -g default,-mips,-darwin,-notdefault && \
+rm -rf prebuilts/clang/host/linux-x86
 /opt/crave/resync.sh && \
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b axion device/xiaomi/renoir && \
 git clone https://github.com/Failedmush1/android_vendor_xiaomi_renoir -b main vendor/xiaomi/renoir && \
