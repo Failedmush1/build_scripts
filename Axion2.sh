@@ -16,3 +16,4 @@ export BUILD_HOSTNAME=crave; \
 export PIXELAGE_BUILD="renoir"
 export TZ=Asia/Tokyo; \
 source build/envsetup.sh && \
+axion renoir va user && make installclean && ax -b
