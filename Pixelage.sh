@@ -10,7 +10,7 @@ git clone https://github.com/RobertGarciaa/device_xiaomi_sm8350-common -b 15 dev
 git clone https://github.com/Failedmush/vendor_xiaomi_renoir -b 15 vendor/xiaomi/renoir && \
 git clone https://github.com/RobertGarciaa/vendor_xiaomi_sm8350-common -b 15 vendor/xiaomi/sm8350-common && \
 git clone https://github.com/RobertGarciaa/android_kernel_xiaomi_sm8350 -b 15 kernel/xiaomi/sm8350 && \
-git clone https://github.com/RobertGarciaa/hardware_xiaomi -b 15 hardware/xiaomi && \
+git clone https://github.com/RobertGarciaa/hardware_xiaomi -b 156277 hardware/xiaomi && \
 export BUILD_USERNAME=Failedmush; \
 export BUILD_HOSTNAME=crave; \
 export PIXELAGE_BUILD="renoir"
