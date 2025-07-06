@@ -10,3 +10,4 @@ git clone https://gitlab.com/AndroPlus/proprietary_vendor_renoir -b lineage-18.1
 git clone https://github.com/renoir-development/android_kernel_xiaomi_sm8350 -b staging/lineage-18.1 kernel/xiaomi/sm8350 && \
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-18.1 hardware/xiaomi && \
 . build/envsetup.sh && \
+renoir breakfast user && make installclean && mka bacon; \
