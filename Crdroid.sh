@@ -9,6 +9,5 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b main ke
 git clone https://github.com/Failedmush1/hardware_xiaomi -b fifteen hardware/xiaomi && \
 # Run to prepare our devices list
 build/envsetup.sh
-# ... now run
-lunch lineage_renoir-bp1a-userdebug
+lunch lineage_renoir-userdebug
 mka bacon
