@@ -8,6 +8,5 @@ git clone https://github.com/Failedmush1/android_vendor_xiaomi_renoir -b main ve
 git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b main kernel/xiaomi/sm8350 && \
 git clone https://github.com/Failedmush1/hardware_xiaomi -b fifteen hardware/xiaomi && \
 # Run to prepare our devices list
-build/envsetup.sh
-lunch lineage_renoir-userdebug
-mka bacon
+. build/envsetup.sh && \
+renoir breakfast user && make installclean && mka bacon; \
