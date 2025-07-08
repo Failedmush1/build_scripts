@@ -2,7 +2,7 @@
 
 rm -rf .repo/local_manifests; \
 
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs; \
+repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs; \
 
 rm -rf prebuilts/clang/host/linux-x86; \
 
@@ -28,4 +28,4 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b main ke
 git clone https://github.com/AxionAOSP-devices/android_hardware_xiaomi -b lineage-22.2 hardware/xiaomi && \
 
 . build/envsetup.sh && \
-axion renoir va user && make installclean && ax -br
+axion renoir va user && make installclean && ax -b
