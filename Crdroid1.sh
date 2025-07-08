@@ -13,4 +13,4 @@ export BUILD_USERNAME=Failedmush; \
 export BUILD_HOSTNAME=crave; \
 export TZ=Asia/Tokyo; \
 . build/envsetup.sh && \
-renoir breakfast user && make installclean && mka bacon; \
+breakfast renoir user && make installclean && mka bacon; \
