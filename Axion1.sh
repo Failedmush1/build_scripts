@@ -1,6 +1,6 @@
 rm -rf .repo/local_manifests; \
 rm -rf {device,vendor,kernel,hardware}/xiaomi; \
-repo init --depth=1 --no-repo-verify -u https://github.com/crdroidandroid/android -b lineage-22.2 -g default,-mips,-darwin,-notdefault && \
+repo init --depth=1 --no-repo-verify -u https://github.com/AxionAOSP/android -b lineage-22.2 -g default,-mips,-darwin,-notdefault && \
 rm -rf prebuilts/clang/host/linux-x86
 /opt/crave/resync.sh && \
 git clone https://github.com/Failedmush/android_device_xiaomi_renoir -b Axion device/xiaomi/renoir && \
