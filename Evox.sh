@@ -28,4 +28,11 @@ export TZ=Asia/Tokyo; \
 # Set up build environment
 . build/envsetup.sh
 # Lunch
-lunch lineage_renoir-user && make installclean && m evolution; \
+lunch lineage_renoir-user
+echo "============="
+echo "lunch done"
+echo "============="
+ m evolution
+ echo "============="
+echo "Rom built"
+echo "============="
