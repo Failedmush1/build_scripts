@@ -12,5 +12,13 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 h
 export BUILD_USERNAME=Failedmush; \
 export BUILD_HOSTNAME=crave; \
 export TZ=Asia/Tokyo; \
+# Vanilla Build
 . build/envsetup.sh && \
 lunch lineage_renoir-user && make installclean && m evolution; \
+rm -rf out/target/product/vanilla && rm -rf out/target/product/gapps; \
+cd out/target/product && mv renoir vanilla && cd ../../..; \
+# Gapps Build
+cd device/xiaomi/renoir && rm lineage_renoir.mk && mv gapps.txt lineage_renoir.mk && cd ../../..; \
+. build/envsetup.sh; \
+lunch lineage_renoir-user && make installclean && m evolution; \
+cd out/target/product && mv renoir gapps && cd ../../..; \
