@@ -30,7 +30,7 @@ lunch lineage_renoir-bp1a-userdebug
 echo "============="
 echo "lunch done"
 echo "============="
- m evolution
+ mevolution
  echo "============="
 echo "Rom built"
 echo "============="
