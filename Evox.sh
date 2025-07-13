@@ -26,7 +26,7 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 h
 # Set up build environment
 . build/envsetup.sh
 # Lunch
-lunch lineage_renoir-user
+lunch lineage_renoir-bp1a-userdebug
 echo "============="
 echo "lunch done"
 echo "============="
