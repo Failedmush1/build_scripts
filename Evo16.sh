@@ -1,6 +1,6 @@
 rm -rf .repo/local_manifests; \
 rm -rf {device,vendor,kernel,hardware}/xiaomi; \
-repo init --depth=1 --no-repo-verify -u https://github.com/Evolution-X/manifest -b vic -g default,-mips,-darwin,-notdefault && \
+repo init --depth=1 --no-repo-verify -u https://github.com/Evolution-X/manifest -b bka -g default,-mips,-darwin,-notdefault && \
 rm -rf prebuilts/clang/host/linux-x86
 /opt/crave/resync.sh && \
 git clone https://github.com/Failedmush/android_device_xiaomi_renoir -b Evolutionx device/xiaomi/renoir && \
