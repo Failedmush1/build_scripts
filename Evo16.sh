@@ -8,7 +8,7 @@ git clone https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-comm
 git clone https://github.com/Failedmush/proprietary_vendor_xiaomi_renoir -b lineage-22.2 vendor/xiaomi/renoir && \
 git clone https://github.com/Spanish-or-Vanish/vendor_xiaomi_sm8350-common -b new vendor/xiaomi/sm8350-common && \
 git clone https://github.com/RobertGarciaa/android_kernel_xiaomi_sm8350 -b 15 kernel/xiaomi/sm8350 && \
-git clone https://github.com/Infinity-X-Devices/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi && \
+git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi && \
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.3 hardware/dolby && \
 export BUILD_USERNAME=Failedmush; \
 export BUILD_HOSTNAME=crave; \
