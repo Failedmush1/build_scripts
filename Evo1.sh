@@ -14,7 +14,7 @@ git clone https://github.com/RobertGarciaa/android_kernel_xiaomi_sm8350 -b 15 ke
 rm -rf hardware/xiaomi
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 && \
 rm -rf hardware/dolby 
-git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b Dolby-Vision hardware/dolby && \
+git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.3 hardware/dolby && \
 export BUILD_USERNAME=Failedmush; \
 export BUILD_HOSTNAME=crave; \
 export TZ=Asia/Tokyo; \
