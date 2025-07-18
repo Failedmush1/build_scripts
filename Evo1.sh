@@ -1,5 +1,4 @@
 rm -rf .repo/local_manifests; \
-rm -rf {device,vendor,kernel,hardware}/xiaomi; \
 repo init --depth=1 --no-repo-verify -u https://github.com/Evolution-X/manifest -b vic -g default,-mips,-darwin,-notdefault && \
 rm -rf prebuilts/clang/host/linux-x86
 /opt/crave/resync.sh && \
