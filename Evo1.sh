@@ -14,8 +14,6 @@ rm -rf hardware/xiaomi
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 hardware/xiaomi && \
 rm -rf hardware/dolby 
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b Dolby-Vision hardware/dolby && \
-rm -rf vendor/xiaomi/camera
-git clone https://github.com/RobertGarciaa/vendor_xiaomi_camera-renoir -b 15 vendor/xiaomi/camera && \
 export BUILD_USERNAME=Failedmush; \
 export BUILD_HOSTNAME=crave; \
 export TZ=Asia/Tokyo; \
