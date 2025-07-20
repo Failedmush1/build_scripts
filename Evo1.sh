@@ -2,6 +2,7 @@ rm -rf .repo/local_manifests; \
 
 # For OTA Updates
 repo init --depth=1 --no-repo-verify -u https://github.com/Evolution-X/manifest -b vic -g default,-mips,-darwin,-notdefault && \
+
 # Fix Trusty Vendor Errors
 rm -rf prebuilts/clang/host/linux-x86
 
