@@ -23,6 +23,9 @@ git clone https://github.com/Failedmush/proprietary_vendor_xiaomi_renoir -b line
 # Vendor Common Tree
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b lineage-22.2 vendor/xiaomi/sm8350-common && \
 
+# Miui camera
+git clone https://github.com/RobertGarciaa/vendor_xiaomi_camera-renoir -b 15 vendor/xiaomi/camera && \
+
 # Kernel Tree
 rm -rf kernel/xiaomi
 git clone https://github.com/RobertGarciaa/android_kernel_xiaomi_sm8350 -b 15 kernel/xiaomi/sm8350 && \
