@@ -3,9 +3,6 @@ rm -rf .repo/local_manifests; \
 # For OTA Updates
 repo init --depth=1 --no-repo-verify -u https://github.com/Evolution-X/manifest -b bka -g default,-mips,-darwin,-notdefault && \
 
-# Fix clang error
-rm -rf prebuilts/clang/host/linux-x86; \
-
 # Sync Command
 /opt/crave/resync.sh && \
 
