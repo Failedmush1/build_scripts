@@ -5,6 +5,7 @@ repo init --depth=1 --no-repo-verify -u https://github.com/Evolution-X/manifest 
 
 # Fix Trusty Vendor Errors
 rm -rf prebuilts/clang/host/linux-x86
+
 # Sync Command
 /opt/crave/resync.sh && \
 
