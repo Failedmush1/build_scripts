@@ -31,10 +31,6 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v2 -b linea
 rm -rf hardware/xiaomi
 git clone https://github.com/Failedmush1/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi && \
 
-# Dolby Tree
-rm -rf hardware/dolby 
-git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.3 hardware/dolby && \
-
 # Build Environment
 export BUILD_USERNAME=Failedmush; \
 export BUILD_HOSTNAME=crave; \
