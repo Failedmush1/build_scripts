@@ -14,7 +14,7 @@ rm -rf device/xiaomi
 git clone https://github.com/Failedmush/android_device_xiaomi_renoir -b Evo16 device/xiaomi/renoir && \
 
 # Device Common Tree
-git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-common -b lineage-23.0 device/xiaomi/sm8350-common && \
+git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-common -b Back-up device/xiaomi/sm8350-common && \
 
 # Vendor Tree
 rm -rf vendor/xiaomi
