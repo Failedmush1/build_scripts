@@ -25,7 +25,7 @@ git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common
 
 # Kernel Tree
 rm -rf kernel/xiaomi
-git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v2 -b lineage-23.0 kernel/xiaomi/sm8350 && \
+git clone https://github.com/Failedmush/android_kernel_xiaomi_sm8350 -b lineage-23.0 kernel/xiaomi/sm8350 && \
 
 # Hardware Tree
 rm -rf hardware/xiaomi
