@@ -36,6 +36,5 @@ export BUILD_USERNAME=Failedmush; \
 export BUILD_HOSTNAME=failed@Bit; \
 export TZ=Asia/Tokyo; \
 . build/envsetup.sh && \
-
 # Lunch Commands
 lunch lineage_renoir-user && make installclean && m lunaris; \
