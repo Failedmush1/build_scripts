@@ -7,7 +7,7 @@ repo init --depth=1 --no-repo-verify -u https://github.com/Evolution-X/manifest 
 rm -rf prebuilts/clang/host/linux-x86
 
 # Sync Command
-/opt/crave/resync.sh && \
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \
 
 # Device Tree
 rm -rf device/xiaomi
