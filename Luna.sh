@@ -11,7 +11,7 @@ rm -rf prebuilts/clang/host/linux-x86
 
 # Device Tree
 rm -rf device/xiaomi
-git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b Luna device/xiaomi/renoir && \
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Luna device/xiaomi/renoir && \
 
 # Device Common Tree
 git clone https://github.com/Evolution-X-Devices/device_xiaomi_sm8350-common -b bka device/xiaomi/sm8350-common && \
