@@ -22,6 +22,3 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v2 -b linea
 rm -rf hardware/xiaomi
 git clone https://github.com/Failedmush1/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi && \
 start command
-lunch lineage_renoir-user 
-make installclean 
-m evolution
