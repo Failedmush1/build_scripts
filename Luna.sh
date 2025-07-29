@@ -7,7 +7,7 @@ repo init --depth=1 --no-repo-verify -u https://github.com/Lunaris-AOSP/android 
 rm -rf prebuilts/clang/host/linux-x86
 
 # Sync Command
-/opt/crave/resync.sh && \
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \
 
 # Device Tree
 rm -rf device/xiaomi
@@ -36,5 +36,4 @@ export BUILD_USERNAME=Failedmush; \
 export BUILD_HOSTNAME=failed@Bit; \
 export TZ=Asia/Tokyo; \
 . build/envsetup.sh && \
-# Lunch Commands
 lunch lineage_renoir-user && make installclean && m lunaris; \
