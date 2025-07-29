@@ -33,7 +33,7 @@ git clone https://github.com/Failedmush1/android_hardware_xiaomi -b lineage-23.0
 
 # Build Environment
 export BUILD_USERNAME=Failedmush; \
-export BUILD_HOSTNAME=crave; \
+export BUILD_HOSTNAME=failed@Bit; \
 export TZ=Asia/Tokyo; \
 . build/envsetup.sh && \
 
