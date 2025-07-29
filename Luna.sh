@@ -7,7 +7,7 @@ repo init --depth=1 --no-repo-verify -u https://github.com/Lunaris-AOSP/android 
 rm -rf prebuilts/clang/host/linux-x86
 
 # Sync Command
-/opt/crave/resync.sh && \
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \
 
 # Device Tree
 rm -rf device/xiaomi
@@ -29,10 +29,7 @@ git clone https://github.com/Failedmush/android_kernel_xiaomi_sm8350 -b lineage-
 # Hardware Tree
 rm -rf hardware/xiaomi
 git clone https://github.com/Failedmush1/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi && \
-
-# Build Environment
-export BUILD_USERNAME=Failedmush; \
-export BUILD_HOSTNAME=crave; \
-export TZ=Asia/Tokyo; \
-. build/envsetup.sh && \
-lunch lineage_renoir-user && make installclean && m lunaris; \
+start command
+lunch lineage_renoir-user  
+make installclean 
+m lunaris
