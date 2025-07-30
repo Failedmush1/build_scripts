@@ -1,5 +1,3 @@
-repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 # Device Tree
 rm -rf device/xiaomi
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Evo16 device/xiaomi/renoir && \
@@ -16,4 +14,3 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v2 -b linea
 # Hardware Tree
 rm -rf hardware/xiaomi
 git clone https://github.com/Failedmush/android_hardware_xiaomi/ -b lineage-23.0 hardware/xiaomi && \
-. build/envsetup.sh
