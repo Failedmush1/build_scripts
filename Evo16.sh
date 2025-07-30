@@ -13,7 +13,7 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \
 
 # Device Tree
 rm -rf device/xiaomi
-git clone https://github.com/Failedmush/android_device_xiaomi_renoir -b Evo16 device/xiaomi/renoir && \
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Evo16 device/xiaomi/renoir && \
 # Device common Tree
 git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-common -b Back-up device/xiaomi/sm8350-common && \
 # Vendor Tree
