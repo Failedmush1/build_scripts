@@ -1,4 +1,3 @@
-rm -rf .repo/local_manifests; \
 #Fix Trusty Vendor Errors
 rm -rf prebuilts/clang/host/linux-x86
 # device Tree
