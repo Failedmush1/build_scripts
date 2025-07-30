@@ -1,11 +1,7 @@
 rm -rf .repo/local_manifests; \
-# For OTA Updates
-repo init --depth=1 --no-repo-verify -u https://github.com/Evolution-X/manifest -b bka -g default,-mips,-darwin,-notdefault && \
-# Fix Trusty Vendor Errors
+#Fix Trusty Vendor Errors
 rm -rf prebuilts/clang/host/linux-x86
-# Sync Command
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \
-# Device Tree
+# device Tree
 rm -rf device/xiaomi
 git clone https://github.com/Failedmush/android_device_xiaomi_renoir -b Evo16 device/xiaomi/renoir && \
 # Device Common Tree
