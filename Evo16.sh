@@ -4,8 +4,7 @@
 rm -rf .repo/local_manifests
 
 # ROM Repo
-repo init --depth=1 --no-repo-verify -u https://github.com/Mi-Apollo/evo_manifest -b bka --git-lfs -g default,-mips,-darwin,-notdefault && \
-
+--repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
 # Sync Rom
 #/opt/crave/resync.sh && \
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \
