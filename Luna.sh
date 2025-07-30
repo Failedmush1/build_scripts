@@ -17,8 +17,4 @@ git clone https://github.com/Failedmush/android_kernel_xiaomi_sm8350 -b lineage-
 
 # Hardware Tree
 rm -rf hardware/xiaomi
-git clone https://github.com/Failedmush/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi && \
-start command
-lunch lineage_renoir-user  
-make installclean 
-m lunaris
+git clone https://github.com/Failedmush/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi
