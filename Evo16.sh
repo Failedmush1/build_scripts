@@ -1,15 +1,5 @@
-#! /bin/bash
-
-# Remove Manifests
-rm -rf .repo/local_manifests
-
-# ROM Repo
 repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
-# Sync Rom
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
-
-# Trees
-
 # Device Tree
 rm -rf device/xiaomi
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Evo16 device/xiaomi/renoir && \
