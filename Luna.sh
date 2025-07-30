@@ -1,14 +1,3 @@
-rm -rf .repo/local_manifests; \
-
-# For OTA Updates
-repo init --depth=1 --no-repo-verify -u https://github.com/Lunaris-AOSP/android -b 16 -g default,-mips,-darwin,-notdefault && \
-
-# Fix Trusty Vendor Errors
-rm -rf prebuilts/clang/host/linux-x86
-
-# Sync Command
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \
-
 # Device Tree
 rm -rf device/xiaomi
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Luna device/xiaomi/renoir && \
@@ -28,7 +17,7 @@ git clone https://github.com/Failedmush/android_kernel_xiaomi_sm8350 -b lineage-
 
 # Hardware Tree
 rm -rf hardware/xiaomi
-git clone https://github.com/Failedmush1/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi && \
+git clone https://github.com/Failedmush/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi && \
 start command
 lunch lineage_renoir-user  
 make installclean 
