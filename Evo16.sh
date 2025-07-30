@@ -32,8 +32,3 @@ git clone https://github.com/Failedmush1/android_hardware_xiaomi -b lineage-23.0
 export BUILD_USERNAME=Failedmush
 export BUILD_HOSTNAME=failed@Bit
 export TZ=Asia/Tokyo
-# --- Build ---
-. build/envsetup.sh && \
-lunch lineage_renoir-bp2a-user && \
-make installclean && \
-m evolution && \
