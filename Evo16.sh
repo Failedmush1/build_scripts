@@ -4,10 +4,9 @@
 rm -rf .repo/local_manifests
 
 # ROM Repo
---repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
 # Sync Rom
-#/opt/crave/resync.sh && \
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 # Trees
 
