@@ -19,4 +19,4 @@ git clone https://github.com/Failedmush/android_hardware_xiaomi/ -b lineage-23.0
 . build/envsetup.sh && \
 lunch infinity_renoir-user && \
 make installclean && \
-mka bacon && \
+mka bacon
