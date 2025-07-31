@@ -1,4 +1,4 @@
-repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/Evolution-X/manifest -b bka -g default,-mips,-darwin,-notdefault
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 # Device Tree
 rm -rf device/xiaomi
@@ -20,6 +20,6 @@ git clone https://github.com/Evolution-X-Devices/hardware_xiaomi -b bka hardware
 rm -rf hardware/dolby
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.3 hardware/dolby
 . build/envsetup.sh && \
-lunch infinity_renoir-user && \
-make installclean && \
-mka bacon
+lunch lineage_renoir-user && \
+make installclean && 
+m evolution
