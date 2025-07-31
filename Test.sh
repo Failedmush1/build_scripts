@@ -15,7 +15,7 @@ rm -rf kernel/xiaomi
 git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v2 -b lineage-23.0 kernel/xiaomi/sm8350 && \
 # Hardware Tree
 rm -rf hardware/xiaomi
-git clone https://github.com/Infinity-X-Devices/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi
+git clone https://github.com/Failedmush1/android_hardware_xiaomiv2 -b lineage-23.0 hardware/xiaomi
 # Hardware Dolby
 rm -rf hardware/dolby
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.3 hardware/dolby
