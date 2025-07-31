@@ -1,4 +1,4 @@
-repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/Evolution-X/manifest -b bka -g default,-mips,-darwin,-notdefault
+repo init -u https://github.com/Mi-Apollo/evo_manifest -b bka --git-lfs
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 # Device Tree
 rm -rf device/xiaomi
