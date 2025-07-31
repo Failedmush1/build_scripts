@@ -19,7 +19,6 @@ git clone https://github.com/Failedmush1/android_hardware_xiaomiv2 -b lineage-23
 # Hardware Dolby
 rm -rf hardware/dolby
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.3 hardware/dolby
-
 . build/envsetup.sh && \
 lunch infinity_renoir-user && \
 make installclean && \
