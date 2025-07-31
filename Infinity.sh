@@ -1,3 +1,5 @@
+repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 # Device Tree
 rm -rf device/xiaomi
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-22.2 device/xiaomi/renoir && \
@@ -14,3 +16,7 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v2 -b 15 ke
 # Hardware Tree
 rm -rf hardware/xiaomi
 git clone https://github.com/Failedmush/android_hardware_xiaomi/ -b lineage-22.2 hardware/xiaomi
+. build/envsetup.sh && \
+lunch infinity_renoir-user && \
+make installclean && \
+mka bacon && \
