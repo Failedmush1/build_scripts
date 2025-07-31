@@ -1,13 +1,12 @@
 rm -rf .repo/local_manifests; \
 
 # For OTA Updates
-repo init --depth=1 --no-repo-verify -u https://github.com/Evolution-X/manifest -b vic -g default,-mips,-darwin,-notdefault && \
-
+repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs
 # Fix Trusty Vendor Errors
 rm -rf prebuilts/clang/host/linux-x86
 
 # Sync Command
-/opt/crave/resync.sh && \
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 # Device Tree
 rm -rf device/xiaomi
