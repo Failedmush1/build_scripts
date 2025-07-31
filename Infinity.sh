@@ -16,6 +16,7 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v2 -b linea
 # Hardware Tree
 rm -rf hardware/xiaomi
 git clone https://github.com/Failedmush/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi
+git clone https://github.com/LineageOS/android_hardware_qcom_display -b lineage-23.0-caf-sm8350
 . build/envsetup.sh && \
 lunch infinity_renoir-user && \
 make installclean && \
