@@ -1,4 +1,5 @@
 repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
+rm -rf prebuilts/clang/host/linux-x86
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 # Device Tree
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Infinity device/xiaomi/renoir && \
