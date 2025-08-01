@@ -1,7 +1,7 @@
-! /bin/bash
+
 
 rm -rf .repo/local_manifests; \
-repo init -u https://github.com/WitAqua/manifest -b 15.2 --git-lfs; \
+repo init -u https://github.com/WitAqua/manifest.git -b 15.2 --git-lfs
 rm -rf prebuilts/clang/host/linux-x86; \
 /opt/crave/resync.sh; \
 rm -rf out/target/product/renoir; \
