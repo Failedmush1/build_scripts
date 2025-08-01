@@ -1,5 +1,3 @@
-
-
 rm -rf .repo/local_manifests; \
 repo init -u https://github.com/WitAqua/manifest.git -b 15.2 --git-lfs
 rm -rf prebuilts/clang/host/linux-x86; \
