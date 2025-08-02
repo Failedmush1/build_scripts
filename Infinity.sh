@@ -4,15 +4,15 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 # Device Tree
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Infinity device/xiaomi/renoir && \
 # Device common Tree
-git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-common -b Infinity device/xiaomi/sm8350-common && \
+git clone https://github.com/WitAqua-Devices/device_xiaomi_sm8350-common -b 16 device/xiaomi/sm8350-common && \
 # Vendor Tree
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-23.0 vendor/xiaomi/renoir && \
 # Vendor common Tree
-git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b lineage-23.0 vendor/xiaomi/sm8350-common && \
+git clone https://github.com/Infinity-X-Devices/vendor_xiaomi_sm8350-common -b 16 vendor/xiaomi/sm8350-common && \
 # Kernel Tree
 git clone https://github.com/Failedmush/android_kernel_xiaomi_sm8350 -b lineage-23.0 kernel/xiaomi/sm8350 && \
 # Hardware Tree
-git clone https://github.com/Failedmush/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi
+git clone https://github.com/Infinity-X-Devices/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi
 . build/envsetup.sh && 
 lunch infinity_renoir-user && \
 make installclean && \
