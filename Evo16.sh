@@ -5,7 +5,7 @@ git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Evolu
 git clone https://github.com/AOSP-for-vili/device_xiaomi_sm8350-common -b derp-16 device/xiaomi/sm8350-common && \
 # Vendor Tree
 rm -rf vendor/xiaomi
-git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-23.0 vendor/xiaomi/renoir && \
+git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b test vendor/xiaomi/renoir && \
 # Vendor common Tree
 git clone https://github.com/AOSP-for-vili/vendor_xiaomi_sm8350-common -b lineage-23 vendor/xiaomi/sm8350-common && \
 # Kernel Tree
