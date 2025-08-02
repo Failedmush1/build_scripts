@@ -10,7 +10,7 @@ git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lin
 # Vendor common Tree
 git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_sm8350-common -b lineage-22.2 vendor/xiaomi/sm8350-common && \
 # Kernel Tree
-git clone https://github.com/Failedmush/android_kernel_xiaomi_sm8350 -b lineage-22.2 kernel/xiaomi/sm8350 && \
+git clone https://github.com/Failedmush/android_kernel_xiaomi_sm8350 -b lineage-23.0 kernel/xiaomi/sm8350 && \
 # Hardware Tree
 git clone https://github.com/Failedmush/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi
 . build/envsetup.sh && 
