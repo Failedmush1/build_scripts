@@ -17,3 +17,4 @@ git clone https://github.com/Failedmush/android_kernel_xiaomi_sm8350 -b lineage-
 # Hardware Tree
 rm -rf hardware/xiaomi
 git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi
+. build/envsetup.sh
