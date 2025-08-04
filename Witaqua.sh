@@ -14,4 +14,4 @@ git clone https://gitlab.com/senoved/android_vendor_xiaomi_sm8350-common -b line
 git clone https://github.com/Failedmush/android_kernel_xiaomi_sm8350 -b lineage-23.0 kernel/xiaomi/sm8350 && \
 git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi 
 . build/envsetup.sh && \
-breakfast renoir user && make imakellclean && mka bacon
+breakfast renoir user && make makellclean && mka bacon
