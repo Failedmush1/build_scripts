@@ -1,5 +1,5 @@
 rm -rf .repo/local_manifests; \
-repo init -u https://github.com/WitAqua/manifest.git -b 15.2 --git-lfs
+repo init -u https://github.com/WitAqua/manifest.git -b 16.0 --git-lfs
 rm -rf prebuilts/clang/host/linux-x86; \
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 rm -rf out/target/product/renoir; \
