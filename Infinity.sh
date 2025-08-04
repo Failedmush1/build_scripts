@@ -2,9 +2,9 @@ repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/ProjectInfi
 rm -rf prebuilts/clang/host/linux-x86
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 # Device Tree
-git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Infinity device/xiaomi/renoir && \
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Luna device/xiaomi/renoir && \
 # Device common Tree
-git clone https://github.com/Failedmush/device_xiaomi_sm8350-common -b Infinity device/xiaomi/sm8350-common && \
+git clone https://github.com/Failedmush/device_xiaomi_sm8350-common -b lineage-22.2 device/xiaomi/sm8350-common && \
 # Vendor Tree
 git clone https://gitlab.com/senoved/android_vendor_xiaomi_renoir -b lineage-22.2 vendor/xiaomi/renoir && \
 # Vendor common Tree
