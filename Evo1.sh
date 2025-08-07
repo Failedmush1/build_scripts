@@ -19,6 +19,9 @@ git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-common -b 
 rm -rf vendor/xiaomi
 git clone https://github.com/Failedmush/proprietary_vendor_xiaomi_renoir -b lineage-22.2 vendor/xiaomi/renoir && \
 
+# miui camera
+git clone https://github.com/Failedmush/Miui-camera-renoir -b lineage-22.2 vendor/xiaomi/miuicamera-renoir
+
 # Vendor Common Tree
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b lineage-22.2 vendor/xiaomi/sm8350-common && \
 
@@ -29,12 +32,7 @@ git clone https://github.com/RobertGarciaa/android_kernel_xiaomi_sm8350 -b 15 ke
 # Hardware Tree
 rm -rf hardware/xiaomi
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 hardware/xiaomi && \
-
-# Build Environment
-export BUILD_USERNAME=Failedmush; \
-export BUILD_HOSTNAME=crave; \
-export TZ=Asia/Tokyo; \
-. build/envsetup.sh && \
+. build/envsetup.renoir-user && \
 
 # Lunch Commands
-lunch lineage_renoir-user && make installclean && m evolution; \
+lunchrenoir-usernoir-user && make installclean && m evolution; \
