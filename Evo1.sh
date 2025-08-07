@@ -35,4 +35,4 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 h
 . build/envsetup.renoir-user && \
 
 # Lunch Commands
-lunchrenoir-usernoir-user && make installclean && m evolution; \
+lunch lineage renoir-user && make installclean && m evolution; \
