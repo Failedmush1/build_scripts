@@ -1,4 +1,4 @@
-repo init -u https://github.com/VoltageOS/manifest.git -b 15-qpr2 --git-lfs
+repo init -u https://github.com/VoltageOS-staging/manifest.git -b 16 --git-lfs
 rm -rf prebuilts/clang/host/linux-x86
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Voltageos device/xiaomi/renoir && \
