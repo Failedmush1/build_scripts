@@ -18,3 +18,5 @@ git clone https://github.com/Failedmush/Kernel_8350_renoir -b lineage-23.0 kerne
 rm -rf hardware/xiaomi
 git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi
 . build/envsetup.sh
+
+lunch lineage_renoir m evolution
