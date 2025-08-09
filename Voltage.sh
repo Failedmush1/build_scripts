@@ -5,6 +5,6 @@ git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Volta
 git clone https://github.com/Failedmush/device_xiaomi_sm8350-common/ -b Voltage device/xiaomi/sm8350-common && \
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-23.0 vendor/xiaomi/renoir && \
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b lineage-23.0 vendor/xiaomi/sm8350-common && \
-git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v2 -b lineage-23.0  kernel/xiaomi/sm8350 && \
+git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v3 -b lineage-23.0  kernel/xiaomi/sm8350 && \
 git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi
 . build/envsetup.sh
