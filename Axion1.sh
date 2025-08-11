@@ -1,7 +1,6 @@
 rm -rf .repo/local_manifests; \
 rm -rf {device,vendor,kernel,hardware}/xiaomi; \
 repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
-rm -rf prebuilts/clang/host/linux-x86
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 # Device Tree
 rm -rf device/xiaomi
