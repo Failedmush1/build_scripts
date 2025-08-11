@@ -12,7 +12,7 @@ git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xi
 # Vendor common Tree
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b lineage-23.0 vendor/xiaomi/sm8350-common && \
 # Kernel Tree
-git clone https://github.com/Failedmush/android_kernel_xiaomi_sm8350ksunext -b lineage-23.0 kernel/xiaomi/sm8350 && \
+git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v3-b lineage-23.0 kernel/xiaomi/sm8350 && \
 # Hardware Tree
 git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi
 . build/envsetup.sh && 
