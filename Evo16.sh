@@ -19,6 +19,8 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v3 -b linea
 # Hardware Tree
 rm -rf hardware/xiaomi
 git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi
+rm -rf hardware/dolby
+git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.3 hardware/dolby && \
 . build/envsetup.sh
 
 lunch lineage_renoir m evolution
