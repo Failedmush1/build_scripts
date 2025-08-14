@@ -8,14 +8,14 @@ git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Volta
 git clone https://github.com/Failedmush/device_xiaomi_sm8350-common -b Voltage device/xiaomi/sm8350-common && \
 # Vendor Tree
 rm -rf vendor/xiaomi
-git clone https://gitlab.com/senoved/android_vendor_xiaomi_renoir -b lineage-22.2 vendor/xiaomi/renoir && \
+git clone https://gitlab.com/senoved/android_vendor_xiaomi_renoir -b lineage-23.0 vendor/xiaomi/renoir && \
 # Vendor camera
 git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
 # Vendor common Tree
-git clone https://gitlab.com/senoved/android_vendor_xiaomi_sm8350-common -b lineage-22.2 vendor/xiaomi/sm8350-common && \
+git clone https://gitlab.com/senoved/android_vendor_xiaomi_sm8350-common -b lineage-23.0 vendor/xiaomi/sm8350-common && \
 # Kernel Tree
 rm -rf kernel/xiaomi
-git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v3 -b lineage-22.2 kernel/xiaomi/sm8350 && \
+git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v3 -b lineage-23.0 kernel/xiaomi/sm8350 && \
 # Hardware Tree
 rm -rf hardware/xiaomi
 git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi
