@@ -1,4 +1,4 @@
-repo init -u https://github.com/VoltageOS-staging/manifest.git -b 16 --git-lfs
+repo init -u https://github.com/VoltageOS/manifest -b 16 --git-lfs
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
 # Device Tree
