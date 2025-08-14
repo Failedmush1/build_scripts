@@ -19,5 +19,6 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v3 -b linea
 # Hardware Tree
 rm -rf hardware/xiaomi
 git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 15.2 hardware/xiaomi
-
+git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
+git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby
 . build/envsetup.sh
