@@ -1,4 +1,4 @@
-repo init -u https://github.com/VoltageOS/manifest -b 15-qpr2  --git-lfs
+repo init -u https://github.com/VoltageOS/manifest -b 16  --git-lfs
 repo sync
 # Device Tree
 rm -rf device/xiaomi
