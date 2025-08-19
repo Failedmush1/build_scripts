@@ -2,7 +2,7 @@ repo init -u https://github.com/VoltageOS/manifest -b 15-qpr2  --git-lfs
 repo sync
 # Device Tree
 rm -rf device/xiaomi
-git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b voltagev2 device/xiaomi/renoir
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b Voltagev2 device/xiaomi/renoir
 # Vendor Tree
 rm -rf vendor/xiaomi
 git clone https://github.com/Failedmush1/android_vendor_xiaomi_renoir -b main vendor/xiaomi/renoir
