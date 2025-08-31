@@ -21,4 +21,25 @@ rm -rf hardware/xiaomi
 git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi && \
 rm -rf hardware/dolby
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby && \
-. build/envsetup.sh
+# =============================
+#  Build: Vanilla → Gapps
+# =============================
+
+# --- Vanilla Build ---
+echo "===== Starting Vanilla Build ====="
+. build/envsetup.sh && \
+lunch lineage_renoir-user && \
+make installclean && \
+m lunaris && \
+mv device/xiaomi/renoir/lineage_renoir.mk device/xiaomi/renoir/vanilla.txt && \
+echo "===== Handling Vanilla Output ====="
+mv out/target/product/renoir out/target/product/renoir\
+
+# --- Gapps Build ---
+echo "===== Setting up for Gapps Build ====="
+mv device/xiaomi/renoir/gapps.txt device/xiaomi/renoir/lineage_rrenoir-usermk && \
+make installclean && \
+m lunaris -j$(nproc --all) && \
+mv device/xiaomi/renoir/lineage_renoir.mk device/xiaomi/renoir/gapps.txt && \
+
+
