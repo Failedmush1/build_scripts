@@ -44,7 +44,7 @@ m lunaris -j$(nproc --all) && \
 mv device/xiaomi/renoir/lineage_renoir.mk device/xiaomi/renoir/gapps.txt && \
 
 echo "===== Handling Gapps Output ====="
-mv out/target/product/renoir out/target/product/renoir && \
+mv out/target/product/gapps out/target/product/gapps && \
 
 # --- Restore Vanilla ---
 mv device/xiaomi/renoir/vanilla.txt device/xiaomi/renoir/lineage_renoir.mk && \
