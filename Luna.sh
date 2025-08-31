@@ -42,4 +42,7 @@ make installclean && \
 m lunaris -j$(nproc --all) && \
 mv device/xiaomi/renoir/lineage_renoir.mk device/xiaomi/renoir/gapps.txt && \
 
+# --- Restore Vanilla ---
+mv device/xiaomi/renoir/vanilla.txt device/xiaomi/renoir/lineage_renoir.mk && \
 
+echo "===== All builds completed successfully! ====="
