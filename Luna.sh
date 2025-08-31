@@ -37,10 +37,13 @@ mv out/target/product/renoir out/target/product/renoir\
 
 # --- Gapps Build ---
 echo "===== Setting up for Gapps Build ====="
-mv device/xiaomi/renoir/gapps.txt device/xiaomi/renoir/lineage_rrenoir-usermk && \
+mv device/xiaomi/renoir/gapps.txt device/xiaomi/renoir/lineage_renoir.mk && \
 make installclean && \
 m lunaris -j$(nproc --all) && \
 mv device/xiaomi/renoir/lineage_renoir.mk device/xiaomi/renoir/gapps.txt && \
+
+echo "===== Handling Gapps Output ====="
+mv out/target/product/renoir out/target/product/renoir && \
 
 # --- Restore Vanilla ---
 mv device/xiaomi/renoir/vanilla.txt device/xiaomi/renoir/lineage_renoir.mk && \
