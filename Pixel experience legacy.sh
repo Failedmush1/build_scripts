@@ -1,5 +1,6 @@
-
+repo init -u https://github.com/PixelExperience-LEGACY-edition/manifest.git -b thirteen-plus --depth=1 --git-lfs
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+
 # Device Tree
 rm -rf device/xiaomi
 git clone https://github.com/PixelExperience-Devices/device_xiaomi_renoir -b thirteen device/xiaomi/renoir && \
