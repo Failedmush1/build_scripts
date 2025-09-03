@@ -1,5 +1,5 @@
 repo init -u https://github.com/PixelExperience-LEGACY-edition/manifest.git -b thirteen-plus --depth=1 --git-lfs
-
+rm -rf prebuilts/clang/host/linux-x86
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 
