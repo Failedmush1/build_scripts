@@ -1,6 +1,6 @@
-repo init -u https://github.com/PixelExperience-LEGACY-edition/manifest.git -b thirteen-plus --depth=1 --git-lfs
+repo init -u https://github.com/Arrow-OS-Extended/android_manifest.git -b arrow-13.1 --git-lfs
 rm -rf prebuilts/clang/host/linux-x86
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 
 
 # Device Tree
