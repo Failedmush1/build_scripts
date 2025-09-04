@@ -13,5 +13,6 @@ git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common
 git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v3 -b lineage-23.0 kernel/xiaomi/sm8350 
 git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi 
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby
+kernel/xiaomi/sm8350/kernelsetup.sh
 build/envsetup.sh && \
 axion renoir va user && make installclean && ax -b
