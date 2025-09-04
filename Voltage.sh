@@ -21,4 +21,5 @@ rm -rf hardware/xiaomi
 git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi
 rm -rf hardware/dolby
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby
+kernel/xiaomi/sm8350/kernelsetup.sh
 . build/envsetup.sh
