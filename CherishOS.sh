@@ -1,4 +1,4 @@
-repo init -u https://github.com/Lunaris-AOSP/android -b 16 --git-lfs
+repo init -u https://github.com/CherishOS/android_manifest.git -b sixteen
 rm -rf prebuilts/clang/host/linux-x86
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \
 # Device Tree
