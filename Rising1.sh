@@ -1,4 +1,4 @@
-repo init --depth=1 --no-repo-verify -u https://github.com/RisingOS-Revived/android -b sixteen-aosp -g default,-mips,-darwin,-notdefault && \
+repo init --depth=1 --no-repo-verify -u https://github.com/RisingOS-Revived/android -b sixteen-los -g default,-mips,-darwin,-notdefault && \
 rm -rf prebuilts/clang/host/linux-x86
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 # Device Tree
