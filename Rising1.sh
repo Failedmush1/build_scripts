@@ -1,4 +1,4 @@
-repo init --depth=1 --no-repo-verify -u https://github.com/RisingOS-Revived/android -b sixteen-los -g default,-mips,-darwin,-notdefault && \
+repo init -u https://github.com/RisingOS-Revived/android -b sixteen-los --git-lfs
 repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 # Device Tree
 rm -rf device/xiaomi
