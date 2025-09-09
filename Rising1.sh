@@ -26,5 +26,31 @@ rm -rf external/chromium-webview/prebuilt/*
 rm -rf .repo/projects/external/chromium-webview/prebuilt/*.git
 rm -rf .repo/project-objects/LineageOS/android_external_chromium-webview_prebuilt_*.git
 repo sync
-. build/envsetup.sh
-riseup renoir user && make installclean && rise b; \
+# =============================
+#  Build: Vanilla → Gapps
+# =============================
+
+# --- Vanilla Build ---
+echo "===== Starting Vanilla Build ====="
+. build/envsetup.sh && \
+riseup renoir user && \
+make installclean && \
+rise b && \
+mv device/xiaomi/renoir/lineage_renoir.mk device/xiaomi/renoir/vanilla.txt && \
+echo "===== Handling Vanilla Output ====="
+mv out/target/product/renoir out/target/product/renoir\
+
+# --- Gapps Build ---
+echo "===== Setting up for Gapps Build ====="
+mv device/xiaomi/renoir/gapps.txt device/xiaomi/renoir/lineage_renoir.mk && \
+make installclean && \
+rise b -j$(nproc --all) && \
+mv device/xiaomi/renoir/lineage_renoir.mk device/xiaomi/renoir/gapps.txt && \
+
+echo "===== Handling Gapps Output ====="
+mv out/target/product/gapps out/target/product/gapps && \
+
+# --- Restore Vanilla ---
+mv device/xiaomi/renoir/vanilla.txt device/xiaomi/renoir/lineage_renoir.mk && \
+
+echo "===== All builds completed successfully! ====="
