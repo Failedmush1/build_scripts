@@ -8,8 +8,6 @@ git clone https://github.com/Failedmush/device_xiaomi_sm8350-common -b 16.0 devi
 # Vendor Tree
 rm -rf vendor/xiaomi
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-23.0 vendor/xiaomi/renoir && \
-# Vendor camera
-git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
 # Vendor common Tree
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b lineage-23.1 vendor/xiaomi/sm8350-common && \
 # Kernel Tree
