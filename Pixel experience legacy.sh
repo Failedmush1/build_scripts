@@ -21,4 +21,5 @@ git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8350 -b lineage-2
 # Hardware Tree
 rm -rf hardware/xiaomi
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-20 hardware/xiaomi && \
+repo sync
 #
