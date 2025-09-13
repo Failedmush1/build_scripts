@@ -12,5 +12,5 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 h
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby
 kernel/xiaomi/sm8350/kernelsetup.sh
 . build/envsetup.sh
-breakfast renoir user && make installclean && mka bacon 
+breakfast renoir user && make installclean && m superior 
 rm -rf prebuilts/clang/host/linux-x86
