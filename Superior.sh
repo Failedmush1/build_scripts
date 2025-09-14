@@ -1,6 +1,8 @@
 rm -rf .repo/local_manifests; \
 rm -rf {device,vendor,kernel,hardware}/xiaomi; \
 repo init --depth=1 --no-repo-verify -u https://github.com/SuperiorOS/manifest -b fifteen-los -m stable/latest.xml -g default,-mips,-darwin,-notdefault && \
+rm -rf prebuilts/clang/host/linux-x86
+repo sync --force-sync
 rm -rf external/chromium-webview/prebuilt/*
 rm -rf .repo/projects/external/chromium-webview/prebuilt/*.git
 rm -rf .repo/project-objects/LineageOS/android_external_chromium-webview_prebuilt_*.git
@@ -16,4 +18,4 @@ git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware
 kernel/xiaomi/sm8350/kernelsetup.sh
 . build/envsetup.sh
 breakfast renoir user && make installclean && m superior 
-rm -rf prebuilts/clang/host/linux-x86
+
