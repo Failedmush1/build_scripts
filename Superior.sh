@@ -3,6 +3,7 @@ rm -rf {device,vendor,kernel,hardware}/xiaomi; \
 repo init --depth=1 --no-repo-verify -u https://github.com/SuperiorOS/manifest -b fifteen-los -m stable/latest.xml -g default,-mips,-darwin,-notdefault && \
 rm -rf prebuilts/clang/host/linux-x86
 repo sync --force-sync
+repo init --git-lfs
 rm -rf external/chromium-webview/prebuilt/*
 rm -rf .repo/projects/external/chromium-webview/prebuilt/*.git
 rm -rf .repo/project-objects/LineageOS/android_external_chromium-webview_prebuilt_*.git
