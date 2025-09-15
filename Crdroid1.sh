@@ -22,31 +22,7 @@ git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xi
 git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby
 kernel/xiaomi/sm8350/kernelsetup.sh
-# =============================
-#  Build: Vanilla → Gapps
-# =============================
 
-# --- Vanilla Build ---
-echo "===== Starting Vanilla Build ====="
-. build/envsetup.sh && \
-breakfast renoir user && \
-make installclean && \
-mka bacon && \
-mv device/xiaomi/renoir/lineage_renoir.mk device/xiaomi/renoir/vanilla.txt && \
-echo "===== Handling Vanilla Output ====="
-mv out/target/product/renoir out/target/product/renoir\
 
-# --- Gapps Build ---
-echo "===== Setting up for Gapps Build ====="
-mv device/xiaomi/renoir/gapps.txt device/xiaomi/renoir/lineage_renoir.mk && \
-make installclean && \
-mka bacon -j$(nproc --all) && \
-mv device/xiaomi/renoir/lineage_renoir.mk device/xiaomi/renoir/gapps.txt && \
-
-echo "===== Handling Gapps Output ====="
-mv out/target/product/gapps out/target/product/gapps && \
-
-# --- Restore Vanilla ---
-mv device/xiaomi/renoir/vanilla.txt device/xiaomi/renoir/lineage_renoir.mk && \
-
-echo "===== All builds completed successfully! ====="
+rm -rf hardware/lineage/compat
+git clone https://github.com/AxionAOSP/android_hardware_lineage_compat -b lineage-23.0 hardware/lineage/compat
