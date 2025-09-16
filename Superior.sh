@@ -9,7 +9,7 @@ rm -rf .repo/projects/external/chromium-webview/prebuilt/*.git
 rm -rf .repo/project-objects/LineageOS/android_external_chromium-webview_prebuilt_*.git
 repo sync --force-sync
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b SuperiorOS device/xiaomi/renoir
-git clone https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-common -b 16 device/xiaomi/sm8350-common
+git clone https://github.com/Failedmush/device_xiaomi_sm8350-common -b 15.0 device/xiaomi/sm8350-common
 git clone https://gitlab.com/senoved/android_vendor_xiaomi_renoir -b lineage-22.2 vendor/xiaomi/renoir
 git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-commonv4 -b lineage-22.2 vendor/xiaomi/sm8350-common
