@@ -1,5 +1,6 @@
 repo init -u https://github.com/Black-Iron-Project/manifest -b z16 --git-lfs --no-clone-bundle
 rm -rf prebuilts/clang/host/linux-x86
+rm -rf external/chromium-webview/prebuilt/* rm -rf .repo/projects/external/chromium-webview/prebuilt/*.git rm -rf .repo/project-objects/LineageOS/android_external_chromium-webview_prebuilt_*.git 
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Blackiron device/xiaomi/renoir 
 git clone https://github.com/Failedmush/device_xiaomi_sm8350-common -b Axionv2 device/xiaomi/sm8350-common 
