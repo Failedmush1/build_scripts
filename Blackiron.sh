@@ -11,5 +11,5 @@ git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xi
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby
 kernel/xiaomi/sm8350/kernelsetup.sh
 .build/envsetup.sh
-blkilunch
+blkilunch renoir user
 blki b
