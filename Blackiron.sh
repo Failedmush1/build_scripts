@@ -10,6 +10,9 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v3 -b linea
 git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi 
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby
 kernel/xiaomi/sm8350/kernelsetup.sh
+repo init -u https://github.com/Black-Iron-Project/manifest -b z16 --git-lfs --no-clone-bundle
+rm -rf prebuilts/clang/host/linux-x86
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 .build/envsetup.sh
 blkilunch renoir user
 blki b
