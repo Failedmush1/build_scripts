@@ -5,7 +5,7 @@ rm -rf prebuilts/clang/host/linux-x86
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \
 # Device Tree
 rm -rf device/xiaomi
-git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b crdroid device/xiaomi/renoir && \
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Crdroid device/xiaomi/renoir && \
 # Device common Tree
 git clone https://github.com/Failedmush/device_xiaomi_sm8350-common -b Axionv2 device/xiaomi/sm8350-common && \
 # Vendor Tree
