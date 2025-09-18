@@ -2,8 +2,7 @@ rm -rf .repo/local_manifests; \
 rm -rf {device,vendor,kernel,hardware}/xiaomi; \
 repo init -u https://github.com/crdroidandroid/android -b 16.0 --git-lfs --no-clone-bundle
 rm -rf prebuilts/clang/host/linux-x86
-git clone https://github.com/Failedmush1/Local-manifest-.git -b main .repo/local_manifests
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \
+repo sync
 # Device Tree
 rm -rf device/xiaomi
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Crdroid device/xiaomi/renoir && \
