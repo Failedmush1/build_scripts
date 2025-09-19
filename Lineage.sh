@@ -1,7 +1,7 @@
 repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
-git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b SuperiorOS device/xiaomi/renoir
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-22.2 device/xiaomi/renoir
 git clone https://github.com/Failedmush/device_xiaomi_sm8350-common -b 15.2-with-Dolby-vision device/xiaomi/sm8350-common
 git clone https://gitlab.com/senoved/android_vendor_xiaomi_renoir -b lineage-22.2 vendor/xiaomi/renoir
 git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
