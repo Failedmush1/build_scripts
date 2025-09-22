@@ -1,4 +1,5 @@
 repo init -u https://github.com/RisingOS-Revived/android -b sixteen-los --git-lfs
+rm -rf prebuilts/clang/host/linux-x86
 repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 # Device Tree
 rm -rf device/xiaomi
