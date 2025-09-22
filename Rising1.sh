@@ -48,6 +48,7 @@ rise b -j$(nproc --all) && \
 mv device/xiaomi/renoir/lineage_renoir.mk device/xiaomi/renoir/gapps.txt && \
 
 echo "===== Handling Gapps Output ====="
+mkdir out/target/product/gapps
 mv out/target/product/gapps out/target/product/gapps && \
 
 # --- Restore Vanilla ---
