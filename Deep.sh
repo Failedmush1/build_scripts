@@ -19,3 +19,5 @@ git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xi
 rm -rf hardware/dolby
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby
 . build/envsetup.sh
+ rm -rf hardware/qcom/display
+git clone https://github.com/Lunaris-AOSP/hardware_qcom_display -b lineage-22.2-caf-sm8350 hardware/qcom/display
