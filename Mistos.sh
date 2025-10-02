@@ -1,4 +1,4 @@
-repo init -u https://github.com/Project-Mist-OS/manifest -b 16 --git-lfs
+repo init -u https://github.com/Project-Mist-OS/manifest -b 16-new --git-lfs
 rm -rf prebuilts/clang/host/linux-x86
 repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Mistos device/xiaomi/renoir 
