@@ -1,4 +1,4 @@
-repo init -u https://github.com/Los-Ext/android_manifest -b 15.2 --git-lfs
+repo init -u https://github.com/LineageOS/android -b lineage-22.2 --git-lfs
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-22.2 device/xiaomi/renoir
