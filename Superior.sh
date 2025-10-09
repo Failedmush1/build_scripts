@@ -15,10 +15,13 @@ git clone https://github.com/Failedmush/device_xiaomi_sm8350-common -b 15.2-with
 git clone https://gitlab.com/senoved/android_vendor_xiaomi_renoir -b lineage-22.2 vendor/xiaomi/renoir
 git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-commonv4 -b lineage-22.2 vendor/xiaomi/sm8350-common
-git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v2 -b lineage-22.2  kernel/xiaomi/sm8350
+git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v3 -b lineage-22.2  kernel/xiaomi/sm8350
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 hardware/xiaomi
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b Dolby-Vision-1.3 hardware/dolby
 rm -rf vendor/gapps
 git clone https://gitlab.com/MindTheGapps/vendor_gapps -b vic vendor/gapps
+cd kernel/xiaomi/sm8350
+curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -s v1.0.9
+cd -
 . build/envsetup.sh
 breakfast renoir user && make installclean && m superior 
