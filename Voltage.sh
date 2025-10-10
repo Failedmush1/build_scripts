@@ -22,3 +22,4 @@ git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xi
 rm -rf hardware/dolby
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby
 kernel/xiaomi/sm8350/kernelsetup.sh
+cat vendor/xiaomi/camera/proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk.part* > vendor/xiaomi/camera/proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk
