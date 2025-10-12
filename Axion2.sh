@@ -16,3 +16,4 @@ git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware
 kernel/xiaomi/sm8350/kernelsetup.sh
 . build/envsetup.sh  && \
 axion renoir va user && make installclean && ax -b
+axion renoir gms core && make installclean && ax -b
