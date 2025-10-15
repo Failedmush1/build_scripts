@@ -1,4 +1,4 @@
-repo init -u https://github.com/RisingOS-Revived/android -b sixteen --git-lfs
+reporters init -u https://github.com/RisingOS-Revived/android -b sixteen --git-lfs
 rm -rf prebuilts/clang/host/linux-x86
 repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 # Device Tree
@@ -15,7 +15,7 @@ git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xi
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b Lunav2 vendor/xiaomi/sm8350-common && \
 # Kernel Tree
 rm -rf kernel/xiaomi
-git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b kernelsu-integration kernel/xiaomi/sm8350 && \
+git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage-23.0 kernel/xiaomi/sm8350 && \
 # Hardware Tree
 rm -rf hardware/xiaomi
 git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi && \
