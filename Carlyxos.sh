@@ -1,4 +1,4 @@
-repo init --git-lfs -u https://gitlab.com/CalyxOS/platform_manifest -b android15-qpr2
+repo init --git-lfs -u https://gitlab.com/CalyxOS/platform_manifest -b staging/android16
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-22.2 device/xiaomi/renoir
