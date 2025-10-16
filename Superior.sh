@@ -1,6 +1,6 @@
 rm -rf .repo/local_manifests; \
 rm -rf {device,vendor,kernel,hardware}/xiaomi; \
-repo init --depth=1 --no-repo-verify -u https://github.com/SuperiorOS/manifest -b fifteen-los -m stable/latest.xml -g default,-mips,-darwin,-notdefault && \
+repo init -u https://github.com/SuperiorOS/manifest.git -b sixteen-los --git-lfs
 rm -rf prebuilts/clang/host/linux-x86
 repo sync --force-sync
 repo init --git-lfs
