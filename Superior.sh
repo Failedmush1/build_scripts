@@ -11,17 +11,17 @@ repo init --depth=1 --no-repo-verify -u https://github.com/SuperiorOS/manifest -
 rm -rf prebuilts/clang/host/linux-x86
 repo sync --force-sync
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b SuperiorOS device/xiaomi/renoir
-git clone https://github.com/Failedmush/device_xiaomi_sm8350-common -b 15.2-with-Dolby-vision device/xiaomi/sm8350-common
-git clone https://gitlab.com/senoved/android_vendor_xiaomi_renoir -b lineage-22.2 vendor/xiaomi/renoir
+git clone https://github.com/Failedmush1/device_xiaomi_sm8350-commonv2 -b Axionv2 device/xiaomi/sm8350-common
+git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-23.0 vendor/xiaomi/renoir && \
 git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
-git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-commonv4 -b lineage-22.2 vendor/xiaomi/sm8350-common
-git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350v3 -b lineage-22.2  kernel/xiaomi/sm8350
-git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 hardware/xiaomi
-git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b Dolby-Vision-1.3 hardware/dolby
+git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b Lunav2 vendor/xiaomi/sm8350-common && \
+rm -rf kernel/xiaomi
+git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage-23.0 kernel/xiaomi/sm8350 && \
+rm -rf hardware/xiaomi
+git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi && \
+rm -rf hardware/dolby
+git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby && \ 
 rm -rf vendor/gapps
-git clone https://gitlab.com/MindTheGapps/vendor_gapps -b vic vendor/gapps
-cd kernel/xiaomi/sm8350
-curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -s v1.0.9
-cd -
+git clone https://gitlab.com/MindTheGapps/vendor_gapps -b baklava vendor/gapps
 . build/envsetup.sh
 breakfast renoir user && make installclean && m superior 
