@@ -1,4 +1,4 @@
-repo init -u https://github.com/ArrowOS-T/android_manifest.git -b arrow-13.1
+repo init -u https://github.com/crdroid-13-fork/android.git -b 13.0 --git-lfs
 repo sync
 git clone https://github.com/LineageOS/android_device_xiaomi_renoir -b lineage-20 device/xiaomi/renoir
 git clone https://github.com/LineageOS/android_device_xiaomi_sm8350-common -b lineage-20 device/xiaomi/sm8350-common
