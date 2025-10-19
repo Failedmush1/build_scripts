@@ -8,31 +8,9 @@ rm -rf prebuilts/clang/host/linux-x86
 # Sync Command
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
-# Device Tree
-rm -rf device/xiaomi
-git clone https://github.com/Failedmush/android_device_xiaomi_renoir -b Evolutionx device/xiaomi/renoir && \
-
-# Device Common Tree
-git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-common -b Back-up device/xiaomi/sm8350-common && \
-
-# Vendor Tree
-rm -rf vendor/xiaomi
-git clone https://github.com/Failedmush/proprietary_vendor_xiaomi_renoir -b lineage-22.2 vendor/xiaomi/renoir && \
-
-# miui camera
-git clone https://github.com/Failedmush/Miui-camera-renoir -b lineage-22.2 vendor/xiaomi/miuicamera-renoir
-
-# Vendor Common Tree
-git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_sm8350-common -b lineage-22.2 vendor/xiaomi/sm8350-common  && \
-
-# Kernel Tree
-rm -rf kernel/xiaomi
-git clone https://github.com/RobertGarciaa/android_kernel_xiaomi_sm8350 -b 15 kernel/xiaomi/sm8350 && \
-
-# Hardware Tree
-rm -rf hardware/xiaomi
-git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 hardware/xiaomi && \
-. build/envsetup.renoir-user && \
-
-# Lunch Commands
-lunch lineage_renoir-user && make installclean && m evolution; \
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Evolutionx device/xiaomi/renoir 
+git clone https://github.com/LineageOS/android_device_xiaomi_sm8350-common -b lineage-21.0 device/xiaomi/sm8350-common
+git clone https://gitlab.com/senoved/android_vendor_xiaomi_renoir -b lineage-21.0 vendor/xiaomi/renoir 
+git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_sm8350-common -b lineage-21.0 vendor/xiaomi/sm8350-common
+git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
+git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-21.0 hardware/xiaomi
