@@ -1,7 +1,7 @@
 rm -rf .repo/local_manifests; \
 
 # For OTA Updates
-repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs
 # Fix Trusty Vendor Errors
 rm -rf prebuilts/clang/host/linux-x86
 
