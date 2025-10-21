@@ -1,6 +1,7 @@
 rm -rf .repo/local_manifests; \
 rm -rf {device,vendor,kernel,hardware}/xiaomi; \
-repo init -u https://github.com/crdroidandroid/android -b 16.0 --git-lfs --no-clone-bundle
+repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --no-clone-bundle
+
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
 # Device Tree
