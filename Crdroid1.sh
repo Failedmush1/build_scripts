@@ -5,7 +5,7 @@ repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --n
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
 # Device Tree
-git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-22.2 device/xiaomi/renoir 
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Crdroid device/xiaomi/renoir 
 # Device common Tree
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-commonv2 -b Axionv2 device/xiaomi/sm8350-common 
 # Vendor Tree
