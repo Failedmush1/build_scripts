@@ -1,5 +1,5 @@
 rm -rf .repo/local_manifests; \
-repo init -u https://github.com/WitAqua/manifest.git -b 16.0 --git-lfs
+repo init -u https://github.com/WitAqua/manifest -b 16.0 
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Witaqua device/xiaomi/renoir
