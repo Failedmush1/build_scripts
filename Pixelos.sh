@@ -1,3 +1,6 @@
+# Assuming you've moved to a new, empty directory:
+repo init -u https://github.com/PixelOS-AOSP/android_manifest -b sixteen
+
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Pixelos device/xiaomi/renoir 
 # Device common Tree
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-commonv2 -b Axionv2 device/xiaomi/sm8350-common 
