@@ -5,7 +5,7 @@ repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune 
 
 # Device Tree
 rm -rf device/xiaomi
-git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-20 device/xiaomi/renoir && \
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-22.2 device/xiaomi/renoir && \
 # Device common Tree
 git clone https://github.com/LineageOS/android_device_xiaomi_sm8350-common -b lineage-20 device/xiaomi/sm8350-common && \
 # Vendor Tree
