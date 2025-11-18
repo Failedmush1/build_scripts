@@ -10,6 +10,6 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-20 har
 git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage-20 kernel/xiaomi/sm8350
 . build/envsetup.sh
 lunch lineage_renoir-user
-m bacon
+mka bacon
 git clone https://gitlab.com/EndCredits/android_vendor_xiaomi_sm8350-common -b thirteen vendor/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-commonv3 -b lineage-20 vendor/xiaomi/sm8350-common
