@@ -1,4 +1,4 @@
-repo init -u repo init -u https://github.com/Arrow-OS-Extended/android_manifest.git -b arrow-13.1 --git-lfs 
+repo init -u https://github.com/Arrow-OS-Extended/android_manifest.git -b arrow-13.1 --git-lfs 
 repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Arrow device/xiaomi/renoir
 git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-commonv2 -b Arrow device/xiaomi/sm8350-common
