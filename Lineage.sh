@@ -1,4 +1,4 @@
-repo init --depth=1 --no-repo-verify -u https://github.com/LineageOS/android/ -b lineage-23.0 --git-lfs -g default,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify -u https://github.com/LineageOS/android/ -b lineage-23.1 --git-lfs -g default,-mips,-darwin,-notdefault
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-22.2 device/xiaomi/renoir
@@ -15,4 +15,4 @@ git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware
 rm -rf hardware/lineage/compat
 git clone https://github.com/AxionAOSP/android_hardware_lineage_compat -b lineage-23.0 hardware/lineage/compat
 . build/envsetup.sh
-breakfast renoir user & mka bacon
+brunch renoir user
