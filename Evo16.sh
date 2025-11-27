@@ -23,4 +23,4 @@ rm -rf hardware/dolby
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby && \
 . build/envsetup.sh
 
-lunch lineage_renoir m evolution
+lunch lineage_renoir & m evolution
