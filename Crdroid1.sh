@@ -19,3 +19,4 @@ rm -rf hardware/lineage/compat
 git clone https://github.com/AxionAOSP/android_hardware_lineage_compat -b lineage-23.0 hardware/lineage/compat
 . build/envsetup.sh
 brunch renoir user
+export GMS=true
