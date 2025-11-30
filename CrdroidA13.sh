@@ -2,7 +2,7 @@ repo init -u https://github.com/Kyura-Ground/android -b 13.0 --git-lfs
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-20 device/xiaomi/renoir
-git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-commonv2 -b lineage-20-backup device/xiaomi/sm8350-common
+git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-commonv2 -b lineage-20 device/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-20 vendor/xiaomi/renoir
 rm -rf  vendor/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-commonv3 -b lineage-20-backup vendor/xiaomi/sm8350-common
