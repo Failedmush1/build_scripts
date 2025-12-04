@@ -1,6 +1,6 @@
 https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Mica device/xiaomi/renoir 
 # Device common Tree
-git clone https://github.com/Failedmush1/device_xiaomi_sm8350-commonv2 -b Axionv2 device/xiaomi/sm8350-common 
+git clone https://github.com/Failedmush1/device_xiaomi_sm8350-commonv2 -b Mica device/xiaomi/sm8350-common 
 # Vendor Tree
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-23.0 vendor/xiaomi/renoir 
 # Vendor common Tree
