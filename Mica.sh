@@ -12,5 +12,5 @@ git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xi
 git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby
 .build/envsetup.sh
-$ lunch mica_renoir-bp3a-user
-$ m mica-release
+lunch mica_renoir-bp3a-user
+m mica-release
