@@ -4,7 +4,7 @@ repo init --depth=1 --no-repo-verify -u https://github.com/crdroidandroid/androi
 rm -rf prebuilts/clang/host/linux-x86
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-22.2 device/xiaomi/renoir
 git clone https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-common -b A7 device/xiaomi/sm8350-common
-git clone https://github.com/Failedmush/Vendor-xiaomi-renoir -b lineage-22.2 vendor/xiaomi/renoir
+git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-22.2 vendor/xiaomi/renoir 
 git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-commonv4 -b lineage-22.2 vendor/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage-22.2 kernel/xiaomi/sm8350
