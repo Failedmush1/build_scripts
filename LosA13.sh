@@ -1,4 +1,4 @@
-repo init -u https://github.com/droid-legacy/android.git -b lineage-20.0 --git-lfs
+repo init -u https://github.com/accupara/los20/ -b lineage-20.0 --git-lfs
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-20 device/xiaomi/renoir
