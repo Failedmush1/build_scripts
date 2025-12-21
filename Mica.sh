@@ -13,6 +13,8 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage
 # Hardware Tree
 git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi
 git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
+rm -rf hardware/lineage/compat
+git clone https://github.com/AxionAOSP/android_hardware_lineage_compat -b lineage-23.0 hardware/lineage/compat
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby
 cd vendor/gms
 bash generate-gms.sh
