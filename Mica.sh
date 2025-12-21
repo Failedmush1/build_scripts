@@ -16,6 +16,6 @@ git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xi
 git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby
 cd vendor/gms
 bash generate-gms.sh
-.build/envsetup.sh
+. build/envsetup.sh
 lunch mica_renoir-bp3a-user
 m mica-release
