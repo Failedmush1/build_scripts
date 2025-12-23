@@ -16,4 +16,4 @@ git clone https://github.com/xiaomi-sm8450-mondrian/hardware_dolby  -b Dolby-Vis
 brunch renoir user
 rm -rf device/xiaomi/sm8350-common
 git clone https://github.com/crdroidandroid/android_device_xiaomi_sm8350-common -b 15.0-vili device/xiaomi/sm8350-common
-git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b Dolby-Vision-1.2 hardware/dolby
+git clone https://github.com/Failedmush/hardware_dolby -b XiaomiDolby-15 hardware/dolby
