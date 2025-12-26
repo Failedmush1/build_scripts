@@ -15,4 +15,4 @@ git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware
 axion renoir va user && make installclean && ax -b
 axion renoir gms core user  && make installclean
 rm -rf hardware/xiaomi
-git https://github.com/AOSP-for-vili/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi
+git clone https://github.com/AOSP-for-vili/android_hardware_xiaomi -b lineage-23.0 hardware/xiaomi
