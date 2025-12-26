@@ -14,5 +14,3 @@ git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware
 . build/envsetup.sh  && \
 axion renoir va user && make installclean && ax -b
 axion renoir gms core user  && make installclean
-rm -rf hardware/dolby
-git clone https://github.com/RobertGarciaa/hardware_dolby -b sony-1.4_xiaomi hardware/dolby
