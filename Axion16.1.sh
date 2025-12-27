@@ -16,4 +16,4 @@ git clone https://github.com/inferno0230/hardware_dolby -b sixteen-qpr1 hardware
 axion renoir va user && make installclean && ax -b
 axion renoir gms core user  && make installclean
 rm -rf hardware/dolby
-git clone https://github.com/Tashar02/vendor_oneplus_dolby -b lineage-23.0 hardware/dolby
+git clone https://github.com/Tashar02/vendor_oneplus_dolby -b main hardware/dolby
