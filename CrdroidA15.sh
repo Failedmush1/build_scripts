@@ -1,7 +1,7 @@
 repo init --depth=1 --no-repo-verify -u https://github.com/crdroidandroid/android -b 15.0 -git-lfs -g default,-mips,-darwin,-notdefault && \
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
-git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-22.2 device/xiaomi/renoir
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b crdroid device/xiaomi/renoir
 rm -rf device/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b lineage-22.2 device/xiaomi/sm8350-common
 rm -rf  vendor/xiaomi/renoir
