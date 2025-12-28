@@ -18,4 +18,4 @@ brunch renoir user
 rm -rf device/xiaomi/sm8350-common
 git clone https://github.com/crdroidandroid/android_device_xiaomi_sm8350-common -b 15.0-vili device/xiaomi/sm8350-common
 rm -rf hardware/dolby
-git clone https://github.com/Failedmush/hardware_dolby -b XiaomiDolby-15 hardware/dolby
+git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby
