@@ -8,8 +8,8 @@ cd PBRP
 export OUT_DIR=out
 ulimit -n 16000
 
-repo init -u https://github.com/PitchBlackRecoveryProject/manifest_pb -b android-12.1 && \
-repo sync && \
+repo init -u https://github.com/PitchBlackRecoveryProject/manifest_pb -b android-12.1 &&
+repo sync 
 
 # Clone OrangeFox tree
 cd PBRP/android_bootable_recovery
