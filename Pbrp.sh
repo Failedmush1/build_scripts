@@ -8,7 +8,7 @@ cd PBRP
 export OUT_DIR=out
 ulimit -n 16000
 
-repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1 && \
+repo init -u https://github.com/PitchBlackRecoveryProject/android_bootable_recovery -b android-12.1 && \
 repo sync && \
 
 # Clone OrangeFox tree
