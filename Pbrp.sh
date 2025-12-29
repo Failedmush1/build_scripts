@@ -21,4 +21,4 @@ set +e
 . build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 set -e
-lunch twrp_renoir-eng && make clean && mka adbd bootimage
+lunch twrp_renoir-eng && make clean && mka pbrp bootimage
