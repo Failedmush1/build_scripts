@@ -21,7 +21,7 @@ git clone https://github.com/Failedmush1/twrp_device_xiaomi_renoir -b fox-12.1-m
 
 # Build Environment
 set +e
-source build/envsetup.sh
+. build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 set -e
 lunch twrp_renoir-eng && make clean && mka adbd bootimage
