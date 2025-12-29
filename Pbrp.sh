@@ -14,11 +14,11 @@ repo sync
 # Clone OrangeFox tree
 cd PBRP/android_bootable_recovery
 rm -rf device/xiaomi/renoir
-git clone https://github.com/Failedmush1/twrp_device_xiaomi_renoir -b fox-12.1-miui ./device/xiaomi/renoir
+git clone https://github.com/Failedmush1/twrp_device_xiaomi_renoir -b PBRP ./device/xiaomi/renoir
 
 # Build Environment
 set +e
 . build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 set -e
-lunch twrp_renoir-eng && make clean && mka pbrp bootimage
+lunch pb_renoir-eng && make clean && mka pbrp bootimage
