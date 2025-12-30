@@ -9,7 +9,6 @@ git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xi
 rm -rf vendor/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b lineage-23.1 vendor/xiaomi/sm8350-common 
 git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage-23.0 kernel/xiaomi/sm8350 
-git clone https://github.com/Failedmush1/vendor_bcr -b main vendor/bcr
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.1 hardware/xiaomi 
 rm -rf hardware/dolby
 git clone https://github.com/Failedmush/hardware_dolby -b Dolby-Vision-1.3 hardware/dolby
