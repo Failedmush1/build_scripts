@@ -9,12 +9,9 @@ git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xi
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b lineage-23.1 vendor/xiaomi/sm8350-common 
 git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage-23.0 kernel/xiaomi/sm8350 
 git clone https://github.com/Failedmush1/vendor_bcr -b main vendor/bcr
-rm -rf hardware/xiaomi
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.1 hardware/xiaomi 
 rm -rf hardware/dolby
 git clone https://github.com/inferno0230/hardware_dolby -b sixteen-qpr1 hardware/dolby
 . build/envsetup.sh  && \
 axion renoir va user && make installclean && ax -b
-axion renoir gms core user  && make installclean
-rm -rf hardware/dolby
-git clone https://github.com/Tashar02/vendor_oneplus_dolby -b main vendor/oneplus/dolby
+axion renoir gms core user  && make installclean && ax -b
