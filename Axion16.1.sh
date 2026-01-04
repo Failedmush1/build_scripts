@@ -16,4 +16,4 @@ git clone https://github.com/Failedmush/hardware_dolby -b Dolby-Vision-1.2 hardw
 axion renoir va user && make installclean && ax -b
 axion renoir gms core user  && make installclean && ax -b
 rm -rf device/xiaomi/sm8350-common
-git clone https://github.com/Failedmush1/device_xiaomi_sm8350-commonv2 -b lineage-23.1 device/xiaomi/sm8350-common
+git clone https://github.com/Failedmush1/device_xiaomi_sm8350-commonv2 -b Axion device/xiaomi/sm8350-common
