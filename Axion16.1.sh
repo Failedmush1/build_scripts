@@ -1,6 +1,7 @@
 repo init --depth=1 --no-repo-verify -u https://github.com/AxionAOSP/android -b lineage-23.1 --git-lfs -g default,-mips,-darwin,-notdefault 
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
+rm -rf device/xiaomi/renoir
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Axion device/xiaomi/renoir 
 rm -rf device/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b lineage-23.1 device/xiaomi/sm8350-common 
