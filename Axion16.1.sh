@@ -24,4 +24,4 @@ rm -rf vendor/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-commonv2 -b lineage-23.1 vendor/xiaomi/sm8350-common 
 rm -rf kernel/xiaomi/sm8350
 git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b Sukisu  kernel/xiaomi/sm8350 
-curl -LSs 'https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh' | bash -s builtin
+git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage-23.1-test  kernel/xiaomi/sm8350 
