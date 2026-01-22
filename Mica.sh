@@ -15,5 +15,5 @@ git clone https://github.com/Failedmush/hardware_dolby -b Dolby-Vision-1.2 hardw
 cd vendor/gms
 bash generate-gms.sh
 . build/envsetup.sh
-lunch mica_renoir-bp3a-user
+lunch mica_renoir-bp4a-user
 m mica-release
