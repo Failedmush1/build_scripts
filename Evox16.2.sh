@@ -1,4 +1,4 @@
-repo init -u https://github.com/Evolution-X/manifest -b bq1 --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b bq2 --git-lfs
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Evox device/xiaomi/renoir 
 rm -rf device/xiaomi/sm8350-common
