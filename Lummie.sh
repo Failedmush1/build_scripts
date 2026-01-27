@@ -1,4 +1,4 @@
-repo init -u https://github.com/LumineDroid/platform_manifest.git -b bynx --git-lfs
+repo init -u https://github.com/LumineDroid/platform_manifest.git -b bellflower --git-lfs
 repo sync
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Lummie device/xiaomi/renoir 
 rm -rf device/xiaomi/sm8350-common
