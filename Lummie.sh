@@ -12,3 +12,5 @@ git clone https://github.com/Failedmush1/hardware_xiaomi -b lineage-23.2 hardwar
 rm -rf hardware/dolby
 git clone https://github.com/Failedmush/hardware_dolby -b Dolby-Vision-1.2 hardware/dolby
 . build/envsetup.sh  && \
+lunch lineage_renoir-bp4a-user
+mka bacon
