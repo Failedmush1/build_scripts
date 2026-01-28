@@ -1,21 +1,14 @@
-repo init -u https://github.com/VoltageOS/manifest -b 16  --git-lfs
+repo init -u https://github.com/VoltageOS/  --git-lfs
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
-# Device Tree
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Voltageos device/xiaomi/renoir
-# Device common Tree
-git clone https://github.com/Failedmush1/device_xiaomi_sm8350-commonv2 -b Voltagev2 device/xiaomi/sm8350-common
-# Vendor Tree
-git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-23.0 vendor/xiaomi/renoir
-# Vendor camera
-git clone https://github.com/Failedmush/vendor_xiaomi_camera -b Renoir vendor/xiaomi/camera
-# Vendor common Tree
-git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b vos vendor/xiaomi/sm8350-common 
-# Kernel Tree
-git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage-23.0 kernel/xiaomi/sm8350
-# Hardware Tree
-git clone https://github.com/WitAqua-Devices/hardware_xiaomi -b 16.0 hardware/xiaomi
-git clone https://github.com/swiitch-OFF-Lab/hardware_dolby -b sony-1.2 hardware/dolby
-cat vendor/xiaomi/camera/proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk.part* > vendor/xiaomi/camera/proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk
+git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b lineage-23.2 device/xiaomi/sm8350-common 
+git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-23.2 vendor/xiaomi/renoir 
+git clone https://github.com/Failedmush1/vendor_xiaomi_camera -b Renoir-16.1 vendor/xiaomi/camera
+git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b lineage-23.2 vendor/xiaomi/sm8350-common 
+git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage-23.2  kernel/xiaomi/sm8350  
+git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.2 hardware/xiaomi 
+git clone https://github.com/Failedmush/hardware_dolby -b Dolby-Vision-1.2 hardware/dolby
+git clone https://github.com/Failedmush1/vendor_bcr -b main vendor/bcr
 . build/envsetup.sh
-breakfast renoir user & mka bacon
+brunch renoir user
