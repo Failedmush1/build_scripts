@@ -12,6 +12,6 @@ git clone https://github.com/Failedmush1/vendor_bcr -b main vendor/bcr
 rm -rf vendor/voltage-priv/keys
 git clone https://github.com/Failedmush1/vendor_voltage-priv_keys -b 16.2 vendor/voltage-priv/keys
 . build/envsetup.sh
-Voltageos
+branch renoir user
 rm -rf  device/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b test device/xiaomi/sm8350-common
