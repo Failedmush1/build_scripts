@@ -1,6 +1,6 @@
-repo init -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs
+repo init --depth=1 --no-repo-verify -u https://github.com/Los-Ext/android_manifest.git -b 16.1 --git-lfs -g default,-mips,-darwin,-notdefault
 rm -rf prebuilts/clang/host/linux-x86
-repo sync
+repo sync -c -j24 --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-22.2 device/xiaomi/renoir 
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b lineage-23.1 device/xiaomi/sm8350-common 
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-23.1 vendor/xiaomi/renoir 
