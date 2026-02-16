@@ -16,4 +16,4 @@ brunch renoir user
 rm -rf  device/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b test device/xiaomi/sm8350-common
 rm -rf kernel/xiaomi/sm8350
-git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b Test  kernel/xiaomi/sm8350  
+git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b Test2  kernel/xiaomi/sm8350  
