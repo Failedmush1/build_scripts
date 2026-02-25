@@ -11,6 +11,6 @@ git clone https://github.com/Failedmush1/hardware_xiaomi -b lineage-23.2 hardwar
 git clone https://github.com/Failedmush/hardware_dolby -b Dolby-Vision-1.2 hardware/dolby
 git clone https://github.com/Failedmush1/vendor_bcr -b main vendor/bcr
 rm -rf kernel/xiaomi/sm8350
-git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b Test  kernel/xiaomi/sm8350
+git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b Test2  kernel/xiaomi/sm8350
 . build/envsetup.sh
 brunch renoir user
