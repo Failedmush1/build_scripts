@@ -11,6 +11,8 @@ git clone https://github.com/Failedmush/hardware_dolby -b Dolby-Vision-1.2 hardw
 git clone https://github.com/Failedmush1/vendor_bcr -b main vendor/bcr
 rm -rf vendor/voltage-priv/keys
 git clone https://github.com/Failedmush1/vendor_voltage-priv_keys -b 16.2 vendor/voltage-priv/keys
+cd vendor/voltage-priv/keys
+./keys.sh
 . build/envsetup.sh
 brunch renoir user
 rm -rf  device/xiaomi/sm8350-common
