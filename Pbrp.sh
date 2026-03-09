@@ -12,7 +12,7 @@ repo init -u https://github.com/PitchBlackRecoveryProject/manifest_pb -b android
 repo sync 
 
 # Clone OrangeFox tree
-cd PBRP/android_bootable_recovery
+cd PBRP
 rm -rf device/xiaomi/renoir
 git clone https://github.com/Failedmush1/twrp_device_xiaomi_renoir -b PBRP ./device/xiaomi/renoir
 
