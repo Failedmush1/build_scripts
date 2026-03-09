@@ -10,6 +10,4 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage
 git clone https://github.com/Failedmush1/hardware_xiaomi -b lineage-23.2 hardware/xiaomi 
 git clone https://github.com/Failedmush/hardware_dolby -b Dolby-Vision-1.2 hardware/dolby
 . build/envsetup.sh && \
-lunch lineage_renoir-user
-make installclean
-m lunaris
+brunch renoir user
