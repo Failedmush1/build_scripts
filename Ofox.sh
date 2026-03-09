@@ -16,7 +16,7 @@ cd sync
 # Clone OrangeFox tree
 cd ~/OrangeFox/fox_12.1
 rm -rf device/xiaomi/renoir
-git clone https://github.com/Failedmush1/twrp_device_xiaomi_renoir -b fox-12.1-miui ./device/xiaomi/renoir
+git clone https://github.com/Failedmush1/twrp_device_xiaomi_renoir -b Test device/xiaomi/renoir
 
 # Build Environment
 set +e
