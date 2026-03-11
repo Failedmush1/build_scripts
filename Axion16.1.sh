@@ -13,7 +13,7 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage
 git clone https://github.com/Failedmush1/hardware_xiaomi -b lineage-23.1 hardware/xiaomi 
 rm -rf hardware/dolby
 git clone https://github.com/Failedmush/hardware_dolby -b Dolby-Vision-1.2 hardware/dolby
-git clone https://github.com/Failedmush1/vendor_voltage-priv_keys -b lineageos vendor/voltage-priv/keys
+git clone https://github.com/Failedmush1/vendor_voltage-priv_keys -b lineageos vendor/lineage-priv/keys
 cd vendor/lineage-priv/keys
 ./keys.sh
 . build/envsetup.sh  && \
