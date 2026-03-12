@@ -20,8 +20,8 @@ git clone https://github.com/Failedmush1/twrp_device_xiaomi_renoir -b Test2 devi
 set +e
 export TW_INCLUDE_RECOVERY_INSTALLER=true
 export TARGET_RECOVERY_DEVICE_MODULES="recovery_installer
-source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
+source build/envsetup.sh
 set -e
 lunch twrp_renoir-eng && make clean && mka adbd bootimage
 
