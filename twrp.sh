@@ -1,1 +1,24 @@
+#!/bin/bash
 
+# Create Directory
+mkdir twrp
+cd twrp
+
+# Just to be on safer side
+export OUT_DIR=out
+ulimit -n 16000
+
+# Init and Sync Repo
+repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1 && \
+repo sync && \
+
+# Clone TWRP tree
+rm -rf device/xiaomi/renoir
+git clone https://github.com/Failedmush1/twrp_device_xiaomi_renoir -b Test2 device/xiaomi/renoir
+
+# Build Environment
+set +e
+source build/envsetup.sh
+export ALLOW_MISSING_DEPENDENCIES=true
+set -e
+lunch twrp_renoir-eng && make clean && mka adbd bootimage
