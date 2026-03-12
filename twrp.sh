@@ -16,6 +16,13 @@ repo sync && \
 rm -rf device/xiaomi/renoir
 git clone https://github.com/Failedmush1/twrp_device_xiaomi_renoir -b Test2 device/xiaomi/renoir
 
+# Build Environment
+set +e
+source build/envsetup.sh
+export ALLOW_MISSING_DEPENDENCIES=true
+set -e
+lunch twrp_renoir-eng && make clean && mka adbd bootimage
+
 # Recovery Installer for 12.1
 # Added to run automatically before the build starts
 echo "Applying TWRP recovery installer patch (5445)..."
@@ -24,11 +31,4 @@ echo "Applying TWRP recovery installer patch (5445)..."
 repopick -g https://gerrit.twrp.me 5445
 
 # Verification: Grep the fix as per your standard procedure
-grep -r "recovery_installer" . | grep "5445" 
-
-# Build Environment
-set +e
-source build/envsetup.sh
-export ALLOW_MISSING_DEPENDENCIES=true
-set -e
-lunch twrp_renoir-eng && make clean && mka adbd bootimage
+grep -r "recovery_installer" . | grep "5445
