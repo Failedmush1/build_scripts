@@ -15,3 +15,5 @@ cd vendor/lineage-priv/keys
 ./keys.sh
 . build/envsetup.sh
 brunch renoir user
+rm -rf vendor/xiaomi/sm8350-common
+git clome https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b lineage-23.2-test vendor/xiaomi/sm8350-common
