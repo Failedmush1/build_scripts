@@ -14,7 +14,7 @@ repo sync
 # Clone OrangeFox tree
 cd PBRP
 rm -rf device/xiaomi/renoir
-git clone https://github.com/Failedmush1/twrp_device_xiaomi_renoir -b PBRP ./device/xiaomi/renoir
+git clone https://github.com/Failedmush1/twrp_device_xiaomi_renoir -b PBRP-miui ./device/xiaomi/renoir
 
 # Build Environment
 set +e
