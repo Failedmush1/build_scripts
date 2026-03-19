@@ -1,4 +1,4 @@
-repo init -u https://gitlab.iode.tech/os/public/manifests/android.git -b v7.3
+repo init -u https://gitlab.e.foundation/e/os/android.git -b a16 --git-lfs
 repo sync
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Crdroid device/xiaomi/renoir 
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b lineage-23.2 device/xiaomi/sm8350-common 
