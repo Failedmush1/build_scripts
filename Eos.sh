@@ -12,5 +12,5 @@ git clone https://github.com/Failedmush1/vendor_bcr -b main vendor/bcr
 git clone https://github.com/Failedmush1/vendor_voltage-priv_keys -b lineageos vendor/lineage-priv/keys
 cd vendor/lineage-priv/keys
 ./keys.sh
-. build/envsetup.sh
+source build/envsetup.sh
 brunch renoir user
