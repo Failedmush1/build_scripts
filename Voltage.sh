@@ -10,7 +10,7 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.2 h
 git clone https://github.com/Failedmush/hardware_dolby -b Dolby-Vision-1.2 hardware/dolby
 git clone https://github.com/Failedmush1/vendor_bcr -b main vendor/bcr
 rm -rf vendor/voltage-priv/keys
-git clone https://github.com/Failedmush1/vendor_voltage-priv_keys -b 16.2 vendor/voltage-priv/keys
+git clone https://github.com/Failedmush1/vendor_voltage-priv_keys -b Voltageos vendor/voltage-priv/keys
 cd vendor/voltage-priv/keys
 ./keys.sh
 . build/envsetup.sh
