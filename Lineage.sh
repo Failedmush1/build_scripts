@@ -10,7 +10,6 @@ git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common
 git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage-22.2  kernel/xiaomi/sm8350  
 git clone https://github.com/Failedmush1/hardware_xiaomi -b lineage-22.2 hardware/xiaomi 
 git clone https://github.com/Failedmush/hardware_dolby -b Dolby-Vision-1.2 hardware/dolby
-git clone https://github.com/LineageOS/android_hardware_sony_timekeep -b lineage-22.1 timekeep
-
+git clone https://github.com/LineageOS/android_hardware_sony_timekeep -b lineage-22.2 hardware/sony/timekeep
 . build/envsetup.sh
 brunch renoir user
