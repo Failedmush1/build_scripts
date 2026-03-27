@@ -11,5 +11,8 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 h
 git clone https://github.com/Failedmush/hardware_dolby -b Dolby-Vision-1.2 hardware/dolby
 git clone https://github.com/LineageOS/android_hardware_sony_timekeep -b lineage-22.2 hardware/sony/timekeep
 git clone https://github.com/Failedmush1/vendor_bcr -b main vendor/bcr
+wget https://raw.githubusercontent.com/306bobby-android/crDroid-build-signed-script/main/create-signed-env.sh
+chmod +x create-signed-env.sh
+./create-signed-env.sh
 . build/envsetup.sh
 brunch renoir user
