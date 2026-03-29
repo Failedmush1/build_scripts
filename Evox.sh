@@ -29,4 +29,4 @@ wget https://raw.githubusercontent.com/306bobby-android/crDroid-build-signed-scr
 chmod +x create-signed-env.sh
 ./create-signed-env.sh
 rm -rf hardware/dolby
-git clone https://github.com/Failedmush1/hardware_dolby -b Renoir-Dolby hardware/dolb
+git clone https://github.com/Failedmush1/hardware_dolby -b Renoir-Dolby hardware/dolby
