@@ -1,6 +1,6 @@
-repo init -u https://github.com/LineageOS-T/android.git -b lineage-20.0 --git-lfs --depth=1
+repo init -u https://github.com/LineageOS/android/ -b lineage-20.0 --git-lfs --depth=1
 rm -rf prebuilts/clang/host/linux-x86
-repo sync -c --force-sync
+repo sync 
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-20 device/xiaomi/renoir
 git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-common -b lineage-20 device/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-20 vendor/xiaomi/renoir
