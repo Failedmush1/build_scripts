@@ -13,3 +13,7 @@ chmod +x create-signed-env.sh
 ./create-signed-env.sh
 . build/envsetup.sh
 brunch renoir user
+rm -rf device/xiaomi/sm8350-common
+git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-commonv2  -b lineage-20 device/xiaomi/sm8350-common
+rm -rf vendor/xiaomi/sm8350-common
+git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-commonv2 -b  lineage-20 vendor/xiaomi/sm8350-common
