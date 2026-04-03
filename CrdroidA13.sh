@@ -11,3 +11,5 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage
 . build/envsetup.sh
 lunch lineage_renoir-user
 m bacon
+rm -rf device/xiaomi/renoir
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b lineage-20 device/xiaomi/renoir
