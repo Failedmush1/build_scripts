@@ -1,6 +1,6 @@
 repo init -u https://github.com/RisingOS-LTS/manifest -b thirteen --git-lfs
 repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
-git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b Risingos device/xiaomi/renoir
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b RisingA13 device/xiaomi/renoir
 git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-commonv2 -b lineage-20 device/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-20 vendor/xiaomi/renoir
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-commonv2 -b lineage-20 vendor/xiaomi/sm8350-common
