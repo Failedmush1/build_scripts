@@ -1,7 +1,7 @@
 repo init --depth=1 --no-repo-verify -u https://github.com/AxionAOSP/android -b lineage-23.2 --git-lfs -g default,-mips,-darwin,-notdefault 
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
-git clone https://github.com/Failedmush1/android_device_xiaomi_renoirv2 -b Axion device/xiaomi/renoir 
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b Axion device/xiaomi/renoir 
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b lineage-23.2 device/xiaomi/sm8350-common 
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-23.2 vendor/xiaomi/renoir 
 git clone https://github.com/Failedmush1/vendor_xiaomi_camera -b Renoir-16.1 vendor/xiaomi/camera
