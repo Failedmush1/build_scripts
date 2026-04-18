@@ -1,0 +1,7 @@
+git clone https://github.com/AOSPA-renoir/device_xiaomi_renoir -b uvite device/xiaomi/renoir
+git clone https://github.com/AOSPA-renoir/device_xiaomi_sm8350-common -b uvite device/xiaomi/sm8350-common
+git clone https://github.com/AOSPA-renoir/android_kernel_msm-5.4 -b uvite kernel/xiaomi/sm8350
+git clone https://github.com/AOSPA-renoir/vendor_xiaomi_camera-renoir -b uvite vendor/xiaomi/camera
+git clone https://github.com/AOSPA-renoir/vendor_xiaomi_renoir -b uvite vendor/xiaomi/renoir
+git clone https://github.com/AOSPA-renoir/vendor_xiaomi_sm8350-common -b uvite vendor/xiaomi/sm8350-common
+git clone https://github.com/AOSPA-renoir/hardware_xiaomi -b uvite hardware/xiaomi
