@@ -6,7 +6,7 @@ git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b lineage-
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-22.2 vendor/xiaomi/renoir 
 git clone https://github.com/Failedmush1/vendor_xiaomi_camera -b Renoir-16.1 vendor/xiaomi/camera
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b lineage-22.2 vendor/xiaomi/sm8350-common 
-git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b lineage-22.2-test  kernel/xiaomi/sm8350  
+git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b KSUNEXT  kernel/xiaomi/sm8350  
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 hardware/xiaomi 
 git clone https://github.com/Failedmush1/hardware_dolby -b Dolby-Vision-1.3 hardware/dolby
 git clone https://github.com/LineageOS/android_hardware_sony_timekeep -b lineage-22.2 hardware/sony/timekeep
