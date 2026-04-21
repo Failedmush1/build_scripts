@@ -9,4 +9,4 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b KSUNEXT
 git clone https://github.com/Failedmush1/hardware_xiaomi -b lineage-23.2 hardware/xiaomi 
 git clone https://github.com/Failedmush1/hardware_dolby -b Dolby-Vision-2.1 hardware/dolby
 . build/envsetup.sh
-brunch renoir user
+ breakfast renoir user & m otapackage
