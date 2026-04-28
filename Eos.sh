@@ -13,4 +13,5 @@ git clone https://github.com/Failedmush1/vendor_voltage-priv_keys -b lineageos v
 cd vendor/lineage-priv/keys
 ./keys.sh
 source build/envsetup.sh
-brunch renoir user
+lunch eos_renoir-bp1a-userdebug
+mka bacon
