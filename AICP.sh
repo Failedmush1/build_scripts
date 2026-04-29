@@ -1,4 +1,4 @@
-repo init -u https://github.com/AICP/platform_manifest.git -b v15.0 --git-lfs--depth=1
+repo init -u https://github.com/AICP/platform_manifest.git -b v15.0 --git-lfs --depth=1
 repo sync
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b Aicp device/xiaomi/renoir 
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b lineage-22.2 device/xiaomi/sm8350-common 
