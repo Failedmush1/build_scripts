@@ -1,4 +1,4 @@
-repo init -u https://github.com/aospa-shadedark/manifest -b vauxite
+repose init -u https://github.com/aospa-shadedark/manifest -b vauxite
 repo sync --current-branch --no-tags -j4
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b vauxite device/xiaomi/renoir
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b vauxite device/xiaomi/sm8350-common
@@ -7,7 +7,7 @@ git clone https://github.com/Failedmush1/vendor_xiaomi_camera -b Renoir-16.1 ven
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b vauxite vendor/xiaomi/renoir
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b vauxite vendor/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/hardware_dolby -b Dolby-Vision-2.1 hardware/dolby
-git clone https://github.com/Failedmush1/hardware_xiaomi -b vauxite hardware/xiaomi
+git clone https://github.com/aospa-shadedark/android_hardware_xiaomi -b vauxite hardware/xiaomi
 . build/envsetup.sh
 lunch aospa_renoir-user
 m otapackage
