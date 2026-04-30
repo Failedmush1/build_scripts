@@ -1,4 +1,4 @@
-repose init -u https://github.com/aospa-shadedark/manifest -b vauxite
+repo init -u https://github.com/aospa-shadedark/manifest -b vauxite
 repo sync --current-branch --no-tags -j4
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b vauxite device/xiaomi/renoir
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b vauxite device/xiaomi/sm8350-common
