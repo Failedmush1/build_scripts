@@ -1,4 +1,4 @@
-repo init -u https://github.com/CalyxOS/platform_manifest -b android16-qpr2     --git-lfs
+repo init -u https://github.com/CalyxOS/platform_manifest -b android15-qpr2     --git-lfs
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b Calyxos device/xiaomi/renoir
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b lineage-22.2 device/xiaomi/sm8350-common 
