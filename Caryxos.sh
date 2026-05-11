@@ -12,3 +12,4 @@ git clone https://github.com/LineageOS/android_hardware_sony_timekeep -b lineage
 git clone https://github.com/Failedmush1/vendor_bcr -b main vendor/bcr
 . build/envsetup.sh
  breakfast renoir user & m otapackage
+lunch calyx_renoir-bp1a-user & m
