@@ -10,6 +10,6 @@ git clone https://github.com/Failedmush1/hardware_xiaomi -b lineage-22.2 hardwar
 git clone https://github.com/Failedmush1/hardware_dolby -b Dolby-Vision-2.1 hardware/dolby
 git clone https://github.com/LineageOS/android_hardware_sony_timekeep -b lineage-22.2 hardware/sony/timekeep
 git clone https://github.com/Failedmush1/vendor_bcr -b main vendor/bcr
-. build/envsetup.sh
+source build/envsetup.sh
  breakfast renoir user & m otapackage
-lunch calyx_renoir-bp1a-user & m
+lunch calyx_renoir-bp1a-user && m 
