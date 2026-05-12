@@ -1,4 +1,4 @@
-linage- init --depth=1 --no-repo-verify -u https://github.com/AxionAOSP/android -b lineage-22.2 --git-lfs -g default,-mips,-darwin,-notdefault 
+repo init --depth=1 --no-repo-verify -u https://github.com/AxionAOSP/android -b lineage-22.2 --git-lfs -g default,-mips,-darwin,-notdefault 
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b AxionA15 device/xiaomi/renoir
