@@ -9,9 +9,9 @@ git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b KSUNEXT
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 hardware/xiaomi 
 git clone https://github.com/Failedmush1/hardware_dolby -b Dolby-Vision-2.1 hardware/dolby
 git clone https://github.com/LineageOS/android_hardware_sony_timekeep -b lineage-22.2 hardware/sony/timekeep
-wget https://raw.githubusercontent.com/306bobby-android/crDroid-build-signed-script/main/create-signed-env.sh
-chmod +x create-signed-env.sh
-./create-signed-env.sh
+git clone https://github.com/Failedmush1/vendor_voltage-priv_keys -b A13-A15-Los vendor/lineage-priv/keys
+cd vendor/lineage-priv/keys
+./keys.sh
 . build/envsetup.sh
 brunch renoir user
 rm -rf hardware/dolby
