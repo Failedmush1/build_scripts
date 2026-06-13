@@ -1,4 +1,4 @@
- repo init --depth=1 -u https://github.comProjectSakuraa/android.git -b 16.2 --git-lfs
+ repo init --depth=1 -u https://github.com/ProjectSakuraa/android.git -b 16.2 --git-lfs
  repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
  git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b sakura device/xiaomi/renoir
  git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b lineage-23.2v2 device/xiaomi/sm8350-common 
