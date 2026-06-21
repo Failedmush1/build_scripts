@@ -24,3 +24,4 @@ source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 set -e
 lunch twrp_renoir-eng && make clean && mka adbd bootimage
+bash ./device/xiaomi/renoir/renoir_build.sh
