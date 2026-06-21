@@ -14,7 +14,7 @@ repo sync && \
 
 # Clone TWRP tree
 rm -rf device/xiaomi/renoir
-git clone https://github.com/Failedmush1/twrp_device_xiaomi_renoir -b Test2 device/xiaomi/renoir
+git clone https://github.com/Failedmush1/twrp_device_xiaomi_renoir -b https://github.com/Failedmush1/twrp_device_xiaomi_renoir/tree/android-12.1-miui device/xiaomi/renoir
 
 # Build Environment
 set +e
