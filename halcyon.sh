@@ -1,6 +1,6 @@
 repo init -u https://github.com/halcyonproject/manifest -b 16.2 --git-lfs
 repo sync -j$(nproc --all) --force-sync
-git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b CrdroidA16 device/xiaomi/renoir 
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b halcyon device/xiaomi/renoir 
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b lineage-23.2 device/xiaomi/sm8350-common 
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-23.2 vendor/xiaomi/renoir 
 git clone https://github.com/Failedmush1/vendor_xiaomi_camera -b Renoir-16.1 vendor/xiaomi/camera
