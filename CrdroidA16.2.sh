@@ -13,6 +13,7 @@ git clone https://github.com/Failedmush1/vendor_bcr -b main vendor/bcr
 git clone https://github.com/Failedmush1/vendor_voltage-priv_keys -b lineageos vendor/lineage-priv/keys
 cd vendor/lineage-priv/keys
 ./keys.sh
+cd -
 . build/envsetup.sh
 brunch renoir user
 rm -rf vendor/xiaomi/sm8350-common
