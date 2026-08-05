@@ -14,5 +14,5 @@ cd vendor/lineage-priv/keys
 ./keys.sh
 cd -
 . build/envsetup.sh
-lunch hertzify_renoir-cp2a-user
+lunch hertzify_renoir-bp4a-user
 mka bacon
