@@ -13,3 +13,6 @@ git clone https://github.com/Failedmush1/vendor_voltage-priv_keys -b lineageos v
 cd vendor/lineage-priv/keys
 ./keys.sh
 cd -
+. build/envsetup.sh
+lunch hertzify_renoir-cp2a-user
+mka bacon
