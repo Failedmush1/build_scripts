@@ -5,7 +5,7 @@ git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b lineage
 git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-common -b lineage-20 device/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-20 vendor/xiaomi/renoir
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b lineage-20 vendor/xiaomi/sm8350-common
-git clone https://github.com/Failedmush1/vendor_xiaomi_camera -b Renoir-17 vendor/xiaomi/camera
+git clone https://github.com/Failedmush1/vendor_xiaomi_camera -b Renoir-17.0 vendor/xiaomi/camera
 git clone https://github.com/Failedmush1/hardware_dolby -b Dolby-Vision-A13 hardware/dolby
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-20 hardware/xiaomi
 git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b Resuki kernel/xiaomi/sm8350
