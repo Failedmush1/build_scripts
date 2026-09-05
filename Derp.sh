@@ -13,4 +13,5 @@ wget https://raw.githubusercontent.com/306bobby-android/crDroid-build-signed-scr
 chmod +x create-signed-env.sh
 ./create-signed-env.sh
 . build/envsetup.sh
-brunch renoir user
+lunch derp_renoir-user
+mka derp
