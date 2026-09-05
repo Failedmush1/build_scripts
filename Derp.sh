@@ -1,5 +1,5 @@
 repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 13
-repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
+repo sync -c -j$(nproc --all) --fail-fast --force-sync --no-clone-bundle --no-tags --prune --partial-clone --clone-filter=blob:none
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b DerpA13 device/xiaomi/renoir
 git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-common -b lineage-20 device/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-20 vendor/xiaomi/renoir
