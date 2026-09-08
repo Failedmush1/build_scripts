@@ -5,12 +5,15 @@ git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b lineage
 git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-common -b lineage-20 device/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-20 vendor/xiaomi/renoir
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b lineage-20 vendor/xiaomi/sm8350-common
-git clone https://github.com/Failedmush1/vendor_xiaomi_camera -b Renoir-16.1 vendor/xiaomi/camera
+git clone https://github.com/Failedmush1/vendor_xiaomi_camera -b Renoir-17.0 vendor/xiaomi/camera
+git clone https://github.com/Failedmush1/hardware_dolby -b Dolby-Vision-A13 hardware/dolby
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-20 hardware/xiaomi
-git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b KSUNEXT kernel/xiaomi/sm8350
+git clone https://github.com/Failedmush1/android_kernel_xiaomi_sm8350 -b Resuki kernel/xiaomi/sm8350
 git clone https://github.com/Failedmush1/vendor_bcr -b A13 vendor/bcr
 wget https://raw.githubusercontent.com/306bobby-android/crDroid-build-signed-script/main/create-signed-env.sh
 chmod +x create-signed-env.sh
 ./create-signed-env.sh
+. build/envsetup.sh
+brunch renoir user
 . build/envsetup.sh
 brunch renoir user
