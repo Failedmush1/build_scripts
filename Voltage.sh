@@ -1,4 +1,4 @@
-repo init -u https://github.com/VoltageOS/manifest.git -b 16.2 --git-lfs --depth=1
+repo init -u https://github.com/VoltageOS/manifest.git -b 17 --git-lfs --depth=1
 repo sync
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b Voltageos device/xiaomi/renoir
 git clone https://github.com/Failedmush1/device_xiaomi_sm8350-common -b lineage-24.0 device/xiaomi/sm8350-common 
