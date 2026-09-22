@@ -12,6 +12,7 @@ rm -rf vendor/voltage-priv/keys
 git clone https://github.com/Failedmush1/vendor_voltage-priv_keys -b Voltageos vendor/voltage-priv/keys
 cd vendor/voltage-priv/keys
 ./keys.sh
+cd -
 . build/envsetup.sh
 brunch renoir user
 rm -rf device/xiaomi/sm8350-common 
