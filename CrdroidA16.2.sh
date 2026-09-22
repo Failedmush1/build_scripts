@@ -1,4 +1,4 @@
-repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --no-clone-bundle --depth=1
+repo init -u https://github.com/crdroidandroid/android.git -b 17 --git-lfs --no-clone-bundle --depth=1
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
 git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b CrdroidA16 device/xiaomi/renoir 
