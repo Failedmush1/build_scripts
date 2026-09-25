@@ -1,0 +1,61 @@
+Changelog
+Device: Xiaomi Mi 11 Lite 5G (renoir)
+Date: 25/09/2026
+* Initial LineageOS 24.0 (Android 17) Bringup
+  * Brought up device, vendor-common, and camera trees for Android 17 (Cinnamon Bun).
+* GApps
+  * Bundled MindTheGapps inline for Android 17 (Google Play Store, Play Services, GSF, Setup Wizard, Restore).
+* MIUI Camera
+  * Fixed front camera video recording crash (resolved EIS buffer import mismatch and enforced format override).
+  * Added public libraries whitelist for Xiaomi camera algorithm libraries.
+  * Updated camera compatibility shims (libgui_shim_miuicamera, BnProducerListener) for Android 17.
+* Dolby Stack
+  * Rebuilt Dolby Codec2 service (vendor.dolby.media.c2@1.0-service) natively from source to resolve Android 17 ABI crash.
+  * Restored full Dolby Atmos & Dolby Vision media playback without mediaserver aborts.
+* SystemUI & Status Bar
+  * Defaulted cellular data icon to 4G instead of LTE.
+  * Added status bar NFC icon with toggle support in settings.
+* Wi-Fi Display (WFD)
+  * Updated WFD proprietary blobs to modern marvel_g baseline with V2 AIDL session support.
+  * Added WfdCommon compatibility patch for modern Android.
+* Sepolicy & Stability
+  * Cleaned up duplicate touch and powershare SELinux definitions.
+  * Fixed vibrator Soong config boolean types.
+
+Date: 14/06/2026
+Kernel
+* Fix unexpected reboot after system shutdown
+Resolved an issue where the device would
+automatically initiate a reboot sequence immediately
+after a successful shutdown. This ensures the device
+remains powered off as intended.
+* Upgraded Dolby Vision Stack: Switched to a newer
+  standalone Dolby Vision stack backported from
+   Android 16. credits to @swiitchOFF for the commits 
+
+Date: 09/06/2026
+* **Source Architecture Overhaul**
+  * Fully rebased and updated the device, device/vendor-common, and vendor tree structures for improved build stability.
+* **Audio Stack Enhancements**
+  * Upgraded the Dolby Atmos subsystem to a newer version, optimizing audio processing and sound stage profiles.
+  * Integrated native support for **E-AC3** (Dolby Digital Plus) audio decoding.
+* **Display & Media Engine**
+  * Restored native **Dolby Vision** support, fully optimized for compatibility with the Android 16 framework.
+
+03/06/26
+• May 2026 sercuity patch
+• Added secure NFC 
+• fixed some issues with video playback
+
+
+• October 2025 sercuity patch
+• Added NFC support for JP devices should also work 
+• NFC support globel too
+• added Osaifu-Keitai support for JP devices(Tested and works)
+• added sony atmos support
+• added miui camera support
+• Include KernelSU Next 1.1.1 with sufus 1.5.10, Firmware, BCR
+
+
+I will maintain this monthly
+Changelog
