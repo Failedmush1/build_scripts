@@ -1,5 +1,11 @@
 Changelog
 Device: Xiaomi Mi 11 Lite 5G (renoir)
+Date: 26/09/2026
+* Kernel & Root
+  * Integrated ReSukiSU v4.2.0 (in-tree driver, version code 40796, UAPI v4).
+  * Integrated SuSFS 5.4 (v2.3.0) with inline hooks for suspicious path/mount hiding, kstat spoofing, and open redirection.
+  * Switched zram compression from LZO to Huawei LZ4KD for improved memory compression performance.
+
 Date: 25/09/2026
 * Initial LineageOS 24.0 (Android 17) Bringup
   * Brought up device, vendor-common, and camera trees for Android 17 (Cinnamon Bun).
