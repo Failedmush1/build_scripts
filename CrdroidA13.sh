@@ -1,7 +1,7 @@
 repo init -u https://github.com/crdroid-13-fork/android.git -b 13.0 --git-lfs
 rm -rf prebuilts/clang/host/linux-x86
 repo sync
-git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b lineage-20 device/xiaomi/renoir
+git clone https://github.com/Failedmush1/android_device_xiaomi_renoir -b CrdroidA13 device/xiaomi/renoir
 git clone https://github.com/Failedmush1/android_device_xiaomi_sm8350-common -b lineage-20 device/xiaomi/sm8350-common
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_renoir -b lineage-20 vendor/xiaomi/renoir
 git clone https://github.com/Failedmush1/proprietary_vendor_xiaomi_sm8350-common -b lineage-20 vendor/xiaomi/sm8350-common
@@ -13,7 +13,5 @@ git clone https://github.com/Failedmush1/vendor_bcr -b A13 vendor/bcr
 wget https://raw.githubusercontent.com/306bobby-android/crDroid-build-signed-script/main/create-signed-env.sh
 chmod +x create-signed-env.sh
 ./create-signed-env.sh
-. build/envsetup.sh
-brunch renoir user
 . build/envsetup.sh
 brunch renoir user
