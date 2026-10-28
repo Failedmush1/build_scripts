@@ -14,5 +14,5 @@ cd vendor/lineage-priv/keys
 ./keys.sh
 cd -
 source build/envsetup.sh
-lunch halcyon_renoir-bp4a-user
+lunch halcyon_renoir-cp2a-user
 m carthage
