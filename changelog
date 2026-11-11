@@ -1,5 +1,14 @@
 Changelog
 Device: Xiaomi Mi 11 Lite 5G (renoir)
+Date: 11/11/2026
+* Storage & Media Compatibility
+  * Switched HWUI renderer to SkiaGL to resolve Adreno Vulkan Canvas drawing glitches (fixes QR code & 2D barcode rendering).
+  * Fixed app external storage folder permissions (mode 0777) in vold for cross-process ContentProvider media access.
+  * Unblocked StorageManagerService mkdirs credential-encrypted (CE) storage checks, preventing app cache directory creation crashes.
+  * Patched MediaProvider FUSE file open handlers to allow legacy apps holding media permissions to read files and videos directly from internal storage and MicroSD cards.
+  * Fixed photo & video sending and sharing in multi-process communication apps.
+  * Auto-applied ROM compatibility patches via vendorsetup.sh for clean and seamless builds.
+
 Date: 26/09/2026
 * Kernel & Root
   * Integrated ReSukiSU v4.2.0 (in-tree driver, version code 40796, UAPI v4).
