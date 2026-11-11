@@ -1,6 +1,8 @@
 Changelog
 Device: Xiaomi Mi 11 Lite 5G (renoir)
 Date: 11/11/2026
+* Call Recording
+  * Re-enabled built-in Basic Call Recorder (BCR) with privileged permissions.
 * Storage & Media Compatibility
   * Switched HWUI renderer to SkiaGL to resolve Adreno Vulkan Canvas drawing glitches (fixes QR code & 2D barcode rendering).
   * Fixed app external storage folder permissions (mode 0777) in vold for cross-process ContentProvider media access.
